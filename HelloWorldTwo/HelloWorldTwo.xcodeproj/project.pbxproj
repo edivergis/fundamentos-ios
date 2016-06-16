@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DE318B81D12FAB200A77CBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE318B71D12FAB200A77CBB /* main.m */; };
+		2DE318BB1D12FAB200A77CBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE318BA1D12FAB200A77CBB /* AppDelegate.m */; };
+		2DE318C31D12FAB200A77CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DE318C21D12FAB200A77CBB /* Assets.xcassets */; };
+		2DE318DA1D12FB0100A77CBB /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE318CF1D12FB0100A77CBB /* NSString+Utils.m */; };
+		2DE318DB1D12FB0100A77CBB /* PrimeiroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE318D21D12FB0100A77CBB /* PrimeiroViewController.m */; };
+		2DE318DC1D12FB0100A77CBB /* PrimeiroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE318D31D12FB0100A77CBB /* PrimeiroViewController.xib */; };
+		2DE318DD1D12FB0100A77CBB /* PrimeiroViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE318D41D12FB0100A77CBB /* PrimeiroViewController_iPad.xib */; };
+		2DE318DE1D12FB0100A77CBB /* PICCarro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE318D71D12FB0100A77CBB /* PICCarro.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2DE318B31D12FAB200A77CBB /* HelloWorldTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE318B71D12FAB200A77CBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DE318B91D12FAB200A77CBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DE318BA1D12FAB200A77CBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2DE318C21D12FAB200A77CBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DE318C71D12FAB200A77CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE318CE1D12FB0100A77CBB /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		2DE318CF1D12FB0100A77CBB /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		2DE318D11D12FB0100A77CBB /* PrimeiroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimeiroViewController.h; sourceTree = "<group>"; };
+		2DE318D21D12FB0100A77CBB /* PrimeiroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeiroViewController.m; sourceTree = "<group>"; };
+		2DE318D31D12FB0100A77CBB /* PrimeiroViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrimeiroViewController.xib; sourceTree = "<group>"; };
+		2DE318D41D12FB0100A77CBB /* PrimeiroViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrimeiroViewController_iPad.xib; sourceTree = "<group>"; };
+		2DE318D61D12FB0100A77CBB /* PICCarro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICCarro.h; sourceTree = "<group>"; };
+		2DE318D71D12FB0100A77CBB /* PICCarro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICCarro.m; sourceTree = "<group>"; };
+		2DE318D91D12FB0100A77CBB /* IPICNovasFuncoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPICNovasFuncoes.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DE318B01D12FAB200A77CBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DE318AA1D12FAB200A77CBB = {
+			isa = PBXGroup;
+			children = (
+				2DE318B51D12FAB200A77CBB /* HelloWorldTwo */,
+				2DE318B41D12FAB200A77CBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DE318B41D12FAB200A77CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DE318B31D12FAB200A77CBB /* HelloWorldTwo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DE318B51D12FAB200A77CBB /* HelloWorldTwo */ = {
+			isa = PBXGroup;
+			children = (
+				2DE318CD1D12FB0100A77CBB /* Categories */,
+				2DE318D01D12FB0100A77CBB /* Controllers */,
+				2DE318D51D12FB0100A77CBB /* Models */,
+				2DE318D81D12FB0100A77CBB /* Protocols */,
+				2DE318B91D12FAB200A77CBB /* AppDelegate.h */,
+				2DE318BA1D12FAB200A77CBB /* AppDelegate.m */,
+				2DE318C21D12FAB200A77CBB /* Assets.xcassets */,
+				2DE318C71D12FAB200A77CBB /* Info.plist */,
+				2DE318B61D12FAB200A77CBB /* Supporting Files */,
+			);
+			path = HelloWorldTwo;
+			sourceTree = "<group>";
+		};
+		2DE318B61D12FAB200A77CBB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DE318B71D12FAB200A77CBB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DE318CD1D12FB0100A77CBB /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2DE318CE1D12FB0100A77CBB /* NSString+Utils.h */,
+				2DE318CF1D12FB0100A77CBB /* NSString+Utils.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		2DE318D01D12FB0100A77CBB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2DE318D11D12FB0100A77CBB /* PrimeiroViewController.h */,
+				2DE318D21D12FB0100A77CBB /* PrimeiroViewController.m */,
+				2DE318D31D12FB0100A77CBB /* PrimeiroViewController.xib */,
+				2DE318D41D12FB0100A77CBB /* PrimeiroViewController_iPad.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2DE318D51D12FB0100A77CBB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2DE318D61D12FB0100A77CBB /* PICCarro.h */,
+				2DE318D71D12FB0100A77CBB /* PICCarro.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2DE318D81D12FB0100A77CBB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2DE318D91D12FB0100A77CBB /* IPICNovasFuncoes.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DE318B21D12FAB200A77CBB /* HelloWorldTwo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DE318CA1D12FAB200A77CBB /* Build configuration list for PBXNativeTarget "HelloWorldTwo" */;
+			buildPhases = (
+				2DE318AF1D12FAB200A77CBB /* Sources */,
+				2DE318B01D12FAB200A77CBB /* Frameworks */,
+				2DE318B11D12FAB200A77CBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloWorldTwo;
+			productName = HelloWorldTwo;
+			productReference = 2DE318B31D12FAB200A77CBB /* HelloWorldTwo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DE318AB1D12FAB200A77CBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Edi Vergis";
+				TargetAttributes = {
+					2DE318B21D12FAB200A77CBB = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 2DE318AE1D12FAB200A77CBB /* Build configuration list for PBXProject "HelloWorldTwo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DE318AA1D12FAB200A77CBB;
+			productRefGroup = 2DE318B41D12FAB200A77CBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DE318B21D12FAB200A77CBB /* HelloWorldTwo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DE318B11D12FAB200A77CBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE318C31D12FAB200A77CBB /* Assets.xcassets in Resources */,
+				2DE318DC1D12FB0100A77CBB /* PrimeiroViewController.xib in Resources */,
+				2DE318DD1D12FB0100A77CBB /* PrimeiroViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DE318AF1D12FAB200A77CBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE318BB1D12FAB200A77CBB /* AppDelegate.m in Sources */,
+				2DE318DB1D12FB0100A77CBB /* PrimeiroViewController.m in Sources */,
+				2DE318DA1D12FB0100A77CBB /* NSString+Utils.m in Sources */,
+				2DE318B81D12FAB200A77CBB /* main.m in Sources */,
+				2DE318DE1D12FB0100A77CBB /* PICCarro.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2DE318C81D12FAB200A77CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DE318C91D12FAB200A77CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DE318CB1D12FAB200A77CBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelloWorldTwo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cast.picios2016.HelloWorldTwo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2DE318CC1D12FAB200A77CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HelloWorldTwo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cast.picios2016.HelloWorldTwo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DE318AE1D12FAB200A77CBB /* Build configuration list for PBXProject "HelloWorldTwo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE318C81D12FAB200A77CBB /* Debug */,
+				2DE318C91D12FAB200A77CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DE318CA1D12FAB200A77CBB /* Build configuration list for PBXNativeTarget "HelloWorldTwo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE318CB1D12FAB200A77CBB /* Debug */,
+				2DE318CC1D12FAB200A77CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DE318AB1D12FAB200A77CBB /* Project object */;
+}
