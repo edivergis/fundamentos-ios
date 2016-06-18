@@ -10,7 +10,7 @@
 @interface PICCarro(){
     //Atributos privados aqui
 }
-    //métodos privados aqui
+    //métodos ou properties privadas aqui
 
 @end
 
@@ -20,7 +20,7 @@
 
 - (instancetype)initComNome:(NSString *)nome ano:(NSInteger)ano{
     if (self=[super init]) {
-        //tudo que for feito no contrutor, deve ser feito nesse ponto
+        //tudo que for feito no construtor, deve ser feito nesse ponto
         self.nome = nome; //acessando pelo método acessor set
         _nome = nome; //acessando a variável de forma direta
         [self setAno:ano]; //acessando pelo método acessor set
@@ -64,7 +64,7 @@
 
 //parse enum para string
 - (NSString *)tipoCombustivelToString:(TipoCombustivel)combustivel{
-    NSString* stringCombustivel = @"Inv;alido";
+    NSString* stringCombustivel = @"Inválido";
     
     switch (combustivel) {
         case TipoCombustivelEtanol:

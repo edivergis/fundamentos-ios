@@ -20,6 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.meuPrimeiroLabel.text = @"Tela Carregada com Sucesso";
+    
+    //Indica que a própria classe implmenta o protocolo UITextFieldDelegate
+    //Responde aos eventos
+    self.txtNome.delegate = self;
+    //self.txtSobrenome.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,7 +34,6 @@
 
 - (IBAction)acaoDoBotao:(id)sender {
     
-#warning transformar [self.txtNome.text isEqualToString:@""] em categories
     if ([self.txtNome.text isEqualToString:@""] && [self.txtSobrenome.text isEqualToString:@""]) {
         
         //método antigo de enviar alerta
@@ -49,18 +53,27 @@
         string = [string stringByAppendingString:self.txtSobrenome.text];
         [self.meuPrimeiroLabel setText:string];
         
-#warning Falar sobre o FirstResponder
         //retirando o focu dos componentes de texto
         [self.txtNome resignFirstResponder];
         [self.txtSobrenome resignFirstResponder];
     }
 }
 
-#warning Falar sobre o touchesBegan
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-//
 //    [self.txtNome resignFirstResponder];
 //    [self.txtSobrenome resignFirstResponder];
+}
+
+#pragma mark - UITextFieldDelegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    BOOL retorno = NO;
+    if (textField ==  self.txtNome) {
+        [self.txtSobrenome becomeFirstResponder];
+        retorno = YES;
+    }else if (textField == self.txtSobrenome){
+        [self acaoDoBotao:nil];
+    }
+    return retorno;
 }
 
 /*

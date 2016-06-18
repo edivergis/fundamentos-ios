@@ -13,6 +13,6 @@
 - (void) acelerar:(NSInteger)km;
 - (void) parar;
 @optional //indica que não é necessário implementar
-- (void) mudarmarcha:(NSInteger)marchar;
+- (void) mudarMarcha:(NSInteger)marcha;
 
 @end

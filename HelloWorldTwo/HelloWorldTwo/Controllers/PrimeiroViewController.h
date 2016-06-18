@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PrimeiroViewController : UIViewController
+@interface PrimeiroViewController : UIViewController<UITextFieldDelegate>
 
 @end

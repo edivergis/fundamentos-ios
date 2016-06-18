@@ -7,30 +7,36 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrimeiroViewController">
             <connections>
+                <outlet property="btnOK" destination="2D6-T3-83N" id="Ypo-eT-gio"/>
+                <outlet property="labeliPhone" destination="m0e-vq-tXs" id="ke6-UB-AUN"/>
                 <outlet property="meuPrimeiroLabel" destination="JKa-HH-GEr" id="Yie-Tv-rzA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iPhone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0e-vq-tXs">
-                    <rect key="frame" x="161" y="323" width="53" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0e-vq-tXs">
+                    <rect key="frame" x="181" y="358" width="53" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meu Primeiro label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKa-HH-GEr">
-                    <rect key="frame" x="116" y="438" width="142" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meu Primeiro label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKa-HH-GEr">
+                    <rect key="frame" x="136" y="427" width="142" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2D6-T3-83N">
-                    <rect key="frame" x="146" y="527" width="82" height="34"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2D6-T3-83N">
+                    <rect key="frame" x="166" y="650" width="82" height="34"/>
                     <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="Pb1-DB-juk"/>
+                        <constraint firstAttribute="width" constant="82" id="aqg-tD-gXc"/>
+                    </constraints>
                     <state key="normal" title="Olá"/>
                     <connections>
                         <action selector="acaoDoBotao:" destination="-1" eventType="touchUpInside" id="3hm-mn-5Ia"/>
@@ -38,7 +44,15 @@
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2D6-T3-83N" secondAttribute="bottom" constant="52" id="2ip-vP-Uaa"/>
+                <constraint firstItem="m0e-vq-tXs" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="JVG-Bc-l8h"/>
+                <constraint firstItem="JKa-HH-GEr" firstAttribute="top" secondItem="m0e-vq-tXs" secondAttribute="bottom" constant="48" id="Lnz-Fo-GnO"/>
+                <constraint firstItem="m0e-vq-tXs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Uyz-bz-CC5"/>
+                <constraint firstItem="2D6-T3-83N" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oe6-SG-Yba"/>
+                <constraint firstItem="JKa-HH-GEr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="soz-fP-ZO9"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
             <point key="canvasLocation" x="353.5" y="342.5"/>
         </view>
     </objects>

@@ -20,15 +20,16 @@
     // Override point for customization after application launch.
     
     //Quando não passamos o nome do arquivo .xib automaticamente o iOS busca pelo xib com o nome da classe
-    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    UIViewController *vc = nil;
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        PrimeiroViewController *pv = [[PrimeiroViewController alloc] initWithNibName:@"PrimeiroViewController" bundle:nil];
-        self.window.rootViewController = pv;
+        vc = [[PrimeiroViewController alloc] initWithNibName:@"PrimeiroViewController" bundle:nil];
     }else{
-        PrimeiroViewController *pv = [[PrimeiroViewController alloc] initWithNibName:@"PrimeiroViewController_iPad" bundle:nil];
-        self.window.rootViewController = pv;
+        vc = [[PrimeiroViewController alloc] initWithNibName:@"PrimeiroViewController_iPad" bundle:nil];
     }
     
+    self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
     return YES;
 }

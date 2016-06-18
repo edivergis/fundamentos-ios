@@ -9,8 +9,12 @@
 #import "PrimeiroViewController.h"
 
 @interface PrimeiroViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *labeliPhone;
 
 @property (weak, nonatomic) IBOutlet UILabel *meuPrimeiroLabel;
+@property (weak, nonatomic) IBOutlet UIButton *btnOK;
+
+
 @end
 
 @implementation PrimeiroViewController
