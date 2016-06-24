@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrimeiroViewController">
             <connections>
+                <outlet property="imageView" destination="Tby-Na-tps" id="jE1-RR-A3q"/>
                 <outlet property="meuPrimeiroLabel" destination="JKa-HH-GEr" id="Yie-Tv-rzA"/>
                 <outlet property="txtNome" destination="flO-l7-5gZ" id="B23-7v-7h5"/>
                 <outlet property="txtSobrenome" destination="GPj-9n-FDD" id="rA7-am-zji"/>
@@ -18,58 +19,115 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iPhone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0e-vq-tXs">
-                    <rect key="frame" x="139" y="196" width="53" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0e-vq-tXs">
+                    <rect key="frame" x="161" y="196" width="53" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2D6-T3-83N">
-                    <rect key="frame" x="146" y="527" width="82" height="34"/>
-                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Olá"/>
-                    <connections>
-                        <action selector="acaoDoBotao:" destination="-1" eventType="touchUpInside" id="3hm-mn-5Ia"/>
-                    </connections>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAR-FZ-zgG">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meu Primeiro label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKa-HH-GEr">
+                    <rect key="frame" x="117" y="237" width="142" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAR-FZ-zgG">
                     <rect key="frame" x="14" y="19" width="46" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="flO-l7-5gZ">
-                    <rect key="frame" x="14" y="56" width="303" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="flO-l7-5gZ">
+                    <rect key="frame" x="14" y="56" width="338" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" returnKeyType="next"/>
                     <connections>
-                        <outlet property="delegate" destination="-1" id="tmY-ms-TPr"/>
+                        <outlet property="delegate" destination="-1" id="ZCp-yh-QwK"/>
                     </connections>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sobrenome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epn-ef-UjM">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sobrenome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="epn-ef-UjM">
                     <rect key="frame" x="14" y="102" width="89" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GPj-9n-FDD">
-                    <rect key="frame" x="14" y="138" width="303" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GPj-9n-FDD">
+                    <rect key="frame" x="14" y="138" width="338" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" returnKeyType="done"/>
                     <connections>
-                        <outlet property="delegate" destination="-1" id="Ncr-5i-EEV"/>
+                        <outlet property="delegate" destination="-1" id="vT5-Eu-SQA"/>
                     </connections>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meu Primeiro label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKa-HH-GEr">
-                    <rect key="frame" x="100" y="237" width="142" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ferrari_FF" translatesAutoresizingMaskIntoConstraints="NO" id="Tby-Na-tps">
+                    <rect key="frame" x="57" y="358" width="252" height="127"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="127" id="YNx-5v-IK6"/>
+                    </constraints>
+                </imageView>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0AR-9c-QuD">
+                    <rect key="frame" x="208" y="532" width="118" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="114" id="AAb-fz-cWS"/>
+                    </constraints>
+                    <connections>
+                        <action selector="onChange:" destination="-1" eventType="valueChanged" id="9v8-wh-Znf"/>
+                    </connections>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKQ-8X-a2Y">
+                    <rect key="frame" x="194" y="616" width="84" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Próxima tela">
+                        <color key="titleColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="avancar:" destination="-1" eventType="touchUpInside" id="liV-4x-FaM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2D6-T3-83N">
+                    <rect key="frame" x="57" y="618" width="82" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="82" id="NJd-lQ-1Wy"/>
+                    </constraints>
+                    <state key="normal" title="Olá"/>
+                    <connections>
+                        <action selector="acaoDoBotao:" destination="-1" eventType="touchUpInside" id="3hm-mn-5Ia"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="m0e-vq-tXs" firstAttribute="centerX" secondItem="2D6-T3-83N" secondAttribute="centerX" constant="89.5" id="1dt-gc-A4d"/>
+                <constraint firstItem="AKQ-8X-a2Y" firstAttribute="leading" secondItem="2D6-T3-83N" secondAttribute="trailing" constant="55" id="2Ud-vH-ZaI"/>
+                <constraint firstItem="JKa-HH-GEr" firstAttribute="top" secondItem="m0e-vq-tXs" secondAttribute="bottom" constant="20" id="2l2-6H-OY2"/>
+                <constraint firstItem="AKQ-8X-a2Y" firstAttribute="baseline" secondItem="2D6-T3-83N" secondAttribute="baseline" constant="-2" id="5kH-p7-7DO"/>
+                <constraint firstItem="epn-ef-UjM" firstAttribute="leading" secondItem="GPj-9n-FDD" secondAttribute="leading" id="6DA-ne-Sec"/>
+                <constraint firstItem="flO-l7-5gZ" firstAttribute="top" secondItem="UAR-FZ-zgG" secondAttribute="bottom" constant="16" id="Etd-U9-XGX"/>
+                <constraint firstAttribute="trailing" secondItem="flO-l7-5gZ" secondAttribute="trailing" constant="23" id="Gzs-es-cS0"/>
+                <constraint firstItem="UAR-FZ-zgG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="19" id="HGf-cX-ugo"/>
+                <constraint firstAttribute="trailing" secondItem="0AR-9c-QuD" secondAttribute="trailing" constant="51" id="HbF-Jv-eOH"/>
+                <constraint firstItem="flO-l7-5gZ" firstAttribute="leading" secondItem="epn-ef-UjM" secondAttribute="leading" id="R59-Yu-NhA"/>
+                <constraint firstItem="m0e-vq-tXs" firstAttribute="centerX" secondItem="JKa-HH-GEr" secondAttribute="centerX" id="TiY-D7-bQH"/>
+                <constraint firstItem="2D6-T3-83N" firstAttribute="top" secondItem="Tby-Na-tps" secondAttribute="bottom" constant="133" id="VSG-1I-xX1"/>
+                <constraint firstItem="epn-ef-UjM" firstAttribute="top" secondItem="flO-l7-5gZ" secondAttribute="bottom" constant="16" id="d2k-AF-7pa"/>
+                <constraint firstItem="m0e-vq-tXs" firstAttribute="top" secondItem="GPj-9n-FDD" secondAttribute="bottom" constant="28" id="f6m-KN-uvq"/>
+                <constraint firstItem="0AR-9c-QuD" firstAttribute="top" secondItem="Tby-Na-tps" secondAttribute="bottom" constant="47" id="lZP-Vm-oHk"/>
+                <constraint firstItem="UAR-FZ-zgG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="nsF-GH-X5y"/>
+                <constraint firstItem="2D6-T3-83N" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-89.5" id="pfe-L4-8pX"/>
+                <constraint firstItem="Tby-Na-tps" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="57" id="pms-R7-jxF"/>
+                <constraint firstAttribute="bottom" secondItem="2D6-T3-83N" secondAttribute="bottom" constant="19" id="pzI-bI-A2h"/>
+                <constraint firstItem="UAR-FZ-zgG" firstAttribute="leading" secondItem="flO-l7-5gZ" secondAttribute="leading" id="qfS-E3-c2S"/>
+                <constraint firstItem="flO-l7-5gZ" firstAttribute="trailing" secondItem="GPj-9n-FDD" secondAttribute="trailing" id="qgk-pY-YGU"/>
+                <constraint firstItem="GPj-9n-FDD" firstAttribute="top" secondItem="epn-ef-UjM" secondAttribute="bottom" constant="15" id="u2H-Nh-khF"/>
+                <constraint firstItem="JKa-HH-GEr" firstAttribute="centerX" secondItem="Tby-Na-tps" secondAttribute="centerX" constant="5" id="xfo-LH-sni"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="471.5" y="288.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="Ferrari_FF" width="350" height="150"/>
+    </resources>
 </document>

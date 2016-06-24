@@ -7,12 +7,17 @@
 //
 
 #import "PrimeiroViewController.h"
+#import "NSString+Utils.h"
+#import "SegundaViewController.h"
 
 @interface PrimeiroViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *meuPrimeiroLabel;
 @property (weak, nonatomic) IBOutlet UITextField *txtSobrenome;
 @property (weak, nonatomic) IBOutlet UITextField *txtNome;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
+
+
 @end
 
 @implementation PrimeiroViewController
@@ -23,7 +28,7 @@
     
     //Indica que a própria classe implmenta o protocolo UITextFieldDelegate
     //Responde aos eventos
-    self.txtNome.delegate = self;
+    //self.txtNome.delegate = self;
     //self.txtSobrenome.delegate = self;
 }
 
@@ -34,7 +39,7 @@
 
 - (IBAction)acaoDoBotao:(id)sender {
     
-    if ([self.txtNome.text isEqualToString:@""] && [self.txtSobrenome.text isEqualToString:@""]) {
+    if ([self.txtNome.text isEmpty] || [self.txtSobrenome.text isEmpty]) {
         
         //método antigo de enviar alerta
 //        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Atenção" message:@"Todos os campos devem ser preenchidos" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
@@ -42,8 +47,12 @@
         
         //método novo de enviar alerta
         UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"Atenção" message:@"Todos os campos devem ser preenchidos!" preferredStyle:UIAlertControllerStyleAlert];
+        
         UIAlertAction *okAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"OK", @"OK action") style:UIAlertActionStyleDefault handler:nil];
+        
+        
         [controller addAction:okAction];
+        
         [self presentViewController:controller animated:YES completion:nil];
         
     }else{
@@ -53,15 +62,15 @@
         string = [string stringByAppendingString:self.txtSobrenome.text];
         [self.meuPrimeiroLabel setText:string];
         
-        //retirando o focu dos componentes de texto
+        //retirando o focus dos componentes de texto
         [self.txtNome resignFirstResponder];
         [self.txtSobrenome resignFirstResponder];
     }
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-//    [self.txtNome resignFirstResponder];
-//    [self.txtSobrenome resignFirstResponder];
+    [self.txtNome resignFirstResponder];
+    [self.txtSobrenome resignFirstResponder];
 }
 
 #pragma mark - UITextFieldDelegate
@@ -76,6 +85,12 @@
     return retorno;
 }
 
+- (IBAction)onChange:(UISlider*)sender {
+    self.imageView.alpha = sender.value;
+}
+
+
+
 /*
 #pragma mark - Navigation
 
@@ -85,5 +100,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)avancar:(id)sender {
+    
+    SegundaViewController *vc = [[SegundaViewController alloc] init];
+    vc.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 @end

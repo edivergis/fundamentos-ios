@@ -15,6 +15,9 @@
 		2DE318DC1D12FB0100A77CBB /* PrimeiroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE318D31D12FB0100A77CBB /* PrimeiroViewController.xib */; };
 		2DE318DD1D12FB0100A77CBB /* PrimeiroViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE318D41D12FB0100A77CBB /* PrimeiroViewController_iPad.xib */; };
 		2DE318DE1D12FB0100A77CBB /* PICCarro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE318D71D12FB0100A77CBB /* PICCarro.m */; };
+		2DE318E61D15D29700A77CBB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DE318E51D15D29700A77CBB /* Default-568h@2x.png */; };
+		2DE318EA1D15D91200A77CBB /* SegundaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE318E81D15D91200A77CBB /* SegundaViewController.m */; };
+		2DE318EB1D15D91200A77CBB /* SegundaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DE318E91D15D91200A77CBB /* SegundaViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,10 @@
 		2DE318D61D12FB0100A77CBB /* PICCarro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICCarro.h; sourceTree = "<group>"; };
 		2DE318D71D12FB0100A77CBB /* PICCarro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICCarro.m; sourceTree = "<group>"; };
 		2DE318D91D12FB0100A77CBB /* IPICNovasFuncoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPICNovasFuncoes.h; sourceTree = "<group>"; };
+		2DE318E51D15D29700A77CBB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2DE318E71D15D91200A77CBB /* SegundaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegundaViewController.h; sourceTree = "<group>"; };
+		2DE318E81D15D91200A77CBB /* SegundaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegundaViewController.m; sourceTree = "<group>"; };
+		2DE318E91D15D91200A77CBB /* SegundaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegundaViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +56,7 @@
 		2DE318AA1D12FAB200A77CBB = {
 			isa = PBXGroup;
 			children = (
+				2DE318E51D15D29700A77CBB /* Default-568h@2x.png */,
 				2DE318B51D12FAB200A77CBB /* HelloWorldTwo */,
 				2DE318B41D12FAB200A77CBB /* Products */,
 			);
@@ -102,6 +110,9 @@
 				2DE318D21D12FB0100A77CBB /* PrimeiroViewController.m */,
 				2DE318D31D12FB0100A77CBB /* PrimeiroViewController.xib */,
 				2DE318D41D12FB0100A77CBB /* PrimeiroViewController_iPad.xib */,
+				2DE318E71D15D91200A77CBB /* SegundaViewController.h */,
+				2DE318E81D15D91200A77CBB /* SegundaViewController.m */,
+				2DE318E91D15D91200A77CBB /* SegundaViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,7 +191,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DE318EB1D15D91200A77CBB /* SegundaViewController.xib in Resources */,
 				2DE318C31D12FAB200A77CBB /* Assets.xcassets in Resources */,
+				2DE318E61D15D29700A77CBB /* Default-568h@2x.png in Resources */,
 				2DE318DC1D12FB0100A77CBB /* PrimeiroViewController.xib in Resources */,
 				2DE318DD1D12FB0100A77CBB /* PrimeiroViewController_iPad.xib in Resources */,
 			);
@@ -197,6 +210,7 @@
 				2DE318DB1D12FB0100A77CBB /* PrimeiroViewController.m in Sources */,
 				2DE318DA1D12FB0100A77CBB /* NSString+Utils.m in Sources */,
 				2DE318B81D12FAB200A77CBB /* main.m in Sources */,
+				2DE318EA1D15D91200A77CBB /* SegundaViewController.m in Sources */,
 				2DE318DE1D12FB0100A77CBB /* PICCarro.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,7 +255,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -280,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

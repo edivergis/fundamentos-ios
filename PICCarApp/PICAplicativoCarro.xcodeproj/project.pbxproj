@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D10F6C31D1D557300D817A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F6B91D1D557300D817A8 /* Assets.xcassets */; };
+		2D10F6C51D1D557300D817A8 /* carros_classicos.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F6BC1D1D557300D817A8 /* carros_classicos.json */; };
+		2D10F6C61D1D557300D817A8 /* carros_esportivos.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F6BD1D1D557300D817A8 /* carros_esportivos.json */; };
+		2D10F6C71D1D557300D817A8 /* carros_luxo.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F6BE1D1D557300D817A8 /* carros_luxo.json */; };
+		2D10F6C81D1D557300D817A8 /* carros_classicos.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F6C01D1D557300D817A8 /* carros_classicos.xml */; };
+		2D10F6C91D1D557300D817A8 /* carros_esportivos.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F6C11D1D557300D817A8 /* carros_esportivos.xml */; };
+		2D10F6CA1D1D557300D817A8 /* carros_luxo.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F6C21D1D557300D817A8 /* carros_luxo.xml */; };
+		2D10F6DB1D1D562F00D817A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D10F6D81D1D562F00D817A8 /* AppDelegate.m */; };
+		2D10F6DC1D1D562F00D817A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D10F6D91D1D562F00D817A8 /* main.m */; };
+		2D10F6E21D1D568600D817A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F6DE1D1D568600D817A8 /* LaunchScreen.storyboard */; };
+		2D10F6E31D1D568600D817A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F6E01D1D568600D817A8 /* Main.storyboard */; };
+		2D10F6F11D1D653500D817A8 /* PICListaCarrosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D10F6EF1D1D653500D817A8 /* PICListaCarrosViewController.m */; };
+		2D10F6F21D1D653500D817A8 /* PICListaCarrosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F6F01D1D653500D817A8 /* PICListaCarrosViewController.xib */; };
+		2D10F6F61D1D65A400D817A8 /* PICDetalhesCarroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D10F6F41D1D65A400D817A8 /* PICDetalhesCarroViewController.m */; };
+		2D10F6F71D1D65A400D817A8 /* PICDetalhesCarroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F6F51D1D65A400D817A8 /* PICDetalhesCarroViewController.xib */; };
+		2D10F6FB1D1D663000D817A8 /* PICSobreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D10F6F91D1D663000D817A8 /* PICSobreViewController.m */; };
+		2D10F6FC1D1D663000D817A8 /* PICSobreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F6FA1D1D663000D817A8 /* PICSobreViewController.xib */; };
+		2D10F6FE1D1D705900D817A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F6FD1D1D705900D817A8 /* Default-568h@2x.png */; };
+		2D10F70C1D1D99C500D817A8 /* piciOS.html in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F70A1D1D99C500D817A8 /* piciOS.html */; };
+		2D10F70D1D1D99C500D817A8 /* pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F70B1D1D99C500D817A8 /* pic.png */; };
+		2D10F7111D1DA02C00D817A8 /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D10F7101D1DA02C00D817A8 /* UIViewController+Utils.m */; };
+		2D10F7151D1DA32700D817A8 /* PICCarro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D10F7141D1DA32700D817A8 /* PICCarro.m */; };
+		2D10F7191D1DA3AE00D817A8 /* PICCarroService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D10F7181D1DA3AE00D817A8 /* PICCarroService.m */; };
+		2D10F71D1D1DAF1500D817A8 /* PICCarroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D10F71C1D1DAF1500D817A8 /* PICCarroCell.m */; };
+		2D10F71F1D1DAF8800D817A8 /* CarroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F71E1D1DAF8800D817A8 /* CarroCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D10F69D1D1D53FD00D817A8 /* PICAplicativoCarro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PICAplicativoCarro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D10F6B91D1D557300D817A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D10F6BC1D1D557300D817A8 /* carros_classicos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_classicos.json; sourceTree = "<group>"; };
+		2D10F6BD1D1D557300D817A8 /* carros_esportivos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_esportivos.json; sourceTree = "<group>"; };
+		2D10F6BE1D1D557300D817A8 /* carros_luxo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_luxo.json; sourceTree = "<group>"; };
+		2D10F6C01D1D557300D817A8 /* carros_classicos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_classicos.xml; sourceTree = "<group>"; };
+		2D10F6C11D1D557300D817A8 /* carros_esportivos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_esportivos.xml; sourceTree = "<group>"; };
+		2D10F6C21D1D557300D817A8 /* carros_luxo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_luxo.xml; sourceTree = "<group>"; };
+		2D10F6D51D1D562F00D817A8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D10F6D71D1D562F00D817A8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D10F6D81D1D562F00D817A8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D10F6D91D1D562F00D817A8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D10F6DF1D1D568600D817A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D10F6E11D1D568600D817A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D10F6EE1D1D653500D817A8 /* PICListaCarrosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICListaCarrosViewController.h; sourceTree = "<group>"; };
+		2D10F6EF1D1D653500D817A8 /* PICListaCarrosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICListaCarrosViewController.m; sourceTree = "<group>"; };
+		2D10F6F01D1D653500D817A8 /* PICListaCarrosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PICListaCarrosViewController.xib; sourceTree = "<group>"; };
+		2D10F6F31D1D65A400D817A8 /* PICDetalhesCarroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICDetalhesCarroViewController.h; sourceTree = "<group>"; };
+		2D10F6F41D1D65A400D817A8 /* PICDetalhesCarroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICDetalhesCarroViewController.m; sourceTree = "<group>"; };
+		2D10F6F51D1D65A400D817A8 /* PICDetalhesCarroViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PICDetalhesCarroViewController.xib; sourceTree = "<group>"; };
+		2D10F6F81D1D663000D817A8 /* PICSobreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICSobreViewController.h; sourceTree = "<group>"; };
+		2D10F6F91D1D663000D817A8 /* PICSobreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICSobreViewController.m; sourceTree = "<group>"; };
+		2D10F6FA1D1D663000D817A8 /* PICSobreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PICSobreViewController.xib; sourceTree = "<group>"; };
+		2D10F6FD1D1D705900D817A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2D10F70A1D1D99C500D817A8 /* piciOS.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = piciOS.html; sourceTree = "<group>"; };
+		2D10F70B1D1D99C500D817A8 /* pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.png; sourceTree = "<group>"; };
+		2D10F70F1D1DA02C00D817A8 /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
+		2D10F7101D1DA02C00D817A8 /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
+		2D10F7131D1DA32700D817A8 /* PICCarro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICCarro.h; sourceTree = "<group>"; };
+		2D10F7141D1DA32700D817A8 /* PICCarro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICCarro.m; sourceTree = "<group>"; };
+		2D10F7171D1DA3AE00D817A8 /* PICCarroService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICCarroService.h; sourceTree = "<group>"; };
+		2D10F7181D1DA3AE00D817A8 /* PICCarroService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICCarroService.m; sourceTree = "<group>"; };
+		2D10F71B1D1DAF1500D817A8 /* PICCarroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICCarroCell.h; sourceTree = "<group>"; };
+		2D10F71C1D1DAF1500D817A8 /* PICCarroCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICCarroCell.m; sourceTree = "<group>"; };
+		2D10F71E1D1DAF8800D817A8 /* CarroCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarroCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D10F69A1D1D53FD00D817A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D10F6941D1D53FD00D817A8 = {
+			isa = PBXGroup;
+			children = (
+				2D10F6FD1D1D705900D817A8 /* Default-568h@2x.png */,
+				2D10F69F1D1D53FD00D817A8 /* PICCarApp */,
+				2D10F69E1D1D53FD00D817A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D10F69E1D1D53FD00D817A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F69D1D1D53FD00D817A8 /* PICAplicativoCarro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D10F69F1D1D53FD00D817A8 /* PICCarApp */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F6E41D1D56C500D817A8 /* Sources */,
+				2D10F6D41D1D562F00D817A8 /* Config */,
+				2D10F6D61D1D562F00D817A8 /* Misc */,
+				2D10F6B71D1D557300D817A8 /* Resources */,
+			);
+			path = PICCarApp;
+			sourceTree = "<group>";
+		};
+		2D10F6B71D1D557300D817A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F7091D1D99C500D817A8 /* html */,
+				2D10F6DD1D1D568600D817A8 /* UserInterface */,
+				2D10F6B81D1D557300D817A8 /* Imagens */,
+				2D10F6BB1D1D557300D817A8 /* json */,
+				2D10F6BF1D1D557300D817A8 /* xml */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2D10F6B81D1D557300D817A8 /* Imagens */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F6B91D1D557300D817A8 /* Assets.xcassets */,
+			);
+			path = Imagens;
+			sourceTree = "<group>";
+		};
+		2D10F6BB1D1D557300D817A8 /* json */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F6BC1D1D557300D817A8 /* carros_classicos.json */,
+				2D10F6BD1D1D557300D817A8 /* carros_esportivos.json */,
+				2D10F6BE1D1D557300D817A8 /* carros_luxo.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		2D10F6BF1D1D557300D817A8 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F6C01D1D557300D817A8 /* carros_classicos.xml */,
+				2D10F6C11D1D557300D817A8 /* carros_esportivos.xml */,
+				2D10F6C21D1D557300D817A8 /* carros_luxo.xml */,
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
+		2D10F6D41D1D562F00D817A8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F6D51D1D562F00D817A8 /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2D10F6D61D1D562F00D817A8 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F6D71D1D562F00D817A8 /* AppDelegate.h */,
+				2D10F6D81D1D562F00D817A8 /* AppDelegate.m */,
+				2D10F6D91D1D562F00D817A8 /* main.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		2D10F6DD1D1D568600D817A8 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F6DE1D1D568600D817A8 /* LaunchScreen.storyboard */,
+				2D10F6E01D1D568600D817A8 /* Main.storyboard */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		2D10F6E41D1D56C500D817A8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F7161D1DA39D00D817A8 /* Services */,
+				2D10F7121D1DA31400D817A8 /* Models */,
+				2D10F70E1D1DA01800D817A8 /* Categories */,
+				2D10F6E51D1D56C500D817A8 /* Controllers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2D10F6E51D1D56C500D817A8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F6E91D1D650F00D817A8 /* ListaCarros */,
+				2D10F6EA1D1D650F00D817A8 /* Sobre */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2D10F6E91D1D650F00D817A8 /* ListaCarros */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F71A1D1DAEE700D817A8 /* Cells */,
+				2D10F6EE1D1D653500D817A8 /* PICListaCarrosViewController.h */,
+				2D10F6EF1D1D653500D817A8 /* PICListaCarrosViewController.m */,
+				2D10F6F01D1D653500D817A8 /* PICListaCarrosViewController.xib */,
+				2D10F6F31D1D65A400D817A8 /* PICDetalhesCarroViewController.h */,
+				2D10F6F41D1D65A400D817A8 /* PICDetalhesCarroViewController.m */,
+				2D10F6F51D1D65A400D817A8 /* PICDetalhesCarroViewController.xib */,
+			);
+			path = ListaCarros;
+			sourceTree = "<group>";
+		};
+		2D10F6EA1D1D650F00D817A8 /* Sobre */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F6F81D1D663000D817A8 /* PICSobreViewController.h */,
+				2D10F6F91D1D663000D817A8 /* PICSobreViewController.m */,
+				2D10F6FA1D1D663000D817A8 /* PICSobreViewController.xib */,
+			);
+			path = Sobre;
+			sourceTree = "<group>";
+		};
+		2D10F7091D1D99C500D817A8 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F70A1D1D99C500D817A8 /* piciOS.html */,
+				2D10F70B1D1D99C500D817A8 /* pic.png */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		2D10F70E1D1DA01800D817A8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F70F1D1DA02C00D817A8 /* UIViewController+Utils.h */,
+				2D10F7101D1DA02C00D817A8 /* UIViewController+Utils.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		2D10F7121D1DA31400D817A8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F7131D1DA32700D817A8 /* PICCarro.h */,
+				2D10F7141D1DA32700D817A8 /* PICCarro.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D10F7161D1DA39D00D817A8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F7171D1DA3AE00D817A8 /* PICCarroService.h */,
+				2D10F7181D1DA3AE00D817A8 /* PICCarroService.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2D10F71A1D1DAEE700D817A8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F71B1D1DAF1500D817A8 /* PICCarroCell.h */,
+				2D10F71C1D1DAF1500D817A8 /* PICCarroCell.m */,
+				2D10F71E1D1DAF8800D817A8 /* CarroCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D10F69C1D1D53FD00D817A8 /* PICAplicativoCarro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D10F6B41D1D53FD00D817A8 /* Build configuration list for PBXNativeTarget "PICAplicativoCarro" */;
+			buildPhases = (
+				2D10F6991D1D53FD00D817A8 /* Sources */,
+				2D10F69A1D1D53FD00D817A8 /* Frameworks */,
+				2D10F69B1D1D53FD00D817A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PICAplicativoCarro;
+			productName = PICCarApp;
+			productReference = 2D10F69D1D1D53FD00D817A8 /* PICAplicativoCarro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D10F6951D1D53FD00D817A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PIC;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Edi Vergis";
+				TargetAttributes = {
+					2D10F69C1D1D53FD00D817A8 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 2D10F6981D1D53FD00D817A8 /* Build configuration list for PBXProject "PICAplicativoCarro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D10F6941D1D53FD00D817A8;
+			productRefGroup = 2D10F69E1D1D53FD00D817A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D10F69C1D1D53FD00D817A8 /* PICAplicativoCarro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D10F69B1D1D53FD00D817A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D10F70C1D1D99C500D817A8 /* piciOS.html in Resources */,
+				2D10F6FC1D1D663000D817A8 /* PICSobreViewController.xib in Resources */,
+				2D10F6F21D1D653500D817A8 /* PICListaCarrosViewController.xib in Resources */,
+				2D10F6C91D1D557300D817A8 /* carros_esportivos.xml in Resources */,
+				2D10F6C81D1D557300D817A8 /* carros_classicos.xml in Resources */,
+				2D10F70D1D1D99C500D817A8 /* pic.png in Resources */,
+				2D10F6E21D1D568600D817A8 /* LaunchScreen.storyboard in Resources */,
+				2D10F6C51D1D557300D817A8 /* carros_classicos.json in Resources */,
+				2D10F6E31D1D568600D817A8 /* Main.storyboard in Resources */,
+				2D10F6FE1D1D705900D817A8 /* Default-568h@2x.png in Resources */,
+				2D10F6C31D1D557300D817A8 /* Assets.xcassets in Resources */,
+				2D10F6C71D1D557300D817A8 /* carros_luxo.json in Resources */,
+				2D10F71F1D1DAF8800D817A8 /* CarroCell.xib in Resources */,
+				2D10F6C61D1D557300D817A8 /* carros_esportivos.json in Resources */,
+				2D10F6CA1D1D557300D817A8 /* carros_luxo.xml in Resources */,
+				2D10F6F71D1D65A400D817A8 /* PICDetalhesCarroViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D10F6991D1D53FD00D817A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D10F71D1D1DAF1500D817A8 /* PICCarroCell.m in Sources */,
+				2D10F7191D1DA3AE00D817A8 /* PICCarroService.m in Sources */,
+				2D10F6F11D1D653500D817A8 /* PICListaCarrosViewController.m in Sources */,
+				2D10F6F61D1D65A400D817A8 /* PICDetalhesCarroViewController.m in Sources */,
+				2D10F6FB1D1D663000D817A8 /* PICSobreViewController.m in Sources */,
+				2D10F7151D1DA32700D817A8 /* PICCarro.m in Sources */,
+				2D10F6DC1D1D562F00D817A8 /* main.m in Sources */,
+				2D10F7111D1DA02C00D817A8 /* UIViewController+Utils.m in Sources */,
+				2D10F6DB1D1D562F00D817A8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D10F6DE1D1D568600D817A8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D10F6DF1D1D568600D817A8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2D10F6E01D1D568600D817A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D10F6E11D1D568600D817A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D10F6B21D1D53FD00D817A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D10F6B31D1D53FD00D817A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D10F6B51D1D53FD00D817A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PICCarApp/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cast.picios2016.PICCarApp;
+				PRODUCT_NAME = PICAplicativoCarro;
+			};
+			name = Debug;
+		};
+		2D10F6B61D1D53FD00D817A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PICCarApp/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cast.picios2016.PICCarApp;
+				PRODUCT_NAME = PICAplicativoCarro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D10F6981D1D53FD00D817A8 /* Build configuration list for PBXProject "PICAplicativoCarro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D10F6B21D1D53FD00D817A8 /* Debug */,
+				2D10F6B31D1D53FD00D817A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D10F6B41D1D53FD00D817A8 /* Build configuration list for PBXNativeTarget "PICAplicativoCarro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D10F6B51D1D53FD00D817A8 /* Debug */,
+				2D10F6B61D1D53FD00D817A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D10F6951D1D53FD00D817A8 /* Project object */;
+}

@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (Utils)
-
+- (NSString*)trim;
+- (BOOL) isEmpty;
 @end

@@ -15,4 +15,13 @@
     return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
 }
 
+- (BOOL) isEmpty{
+    BOOL isEmpty = NO;
+    if ([self trim].length == 0) {
+        isEmpty = YES;
+    }
+    return isEmpty;
+}
+
+
 @end
