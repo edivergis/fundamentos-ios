@@ -17,6 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"Segunda view controller";
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -25,7 +29,9 @@
 }
 
 - (IBAction)acaoVoltar:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    //[self dismissViewControllerAnimated:YES completion:nil];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 

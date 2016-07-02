@@ -14,28 +14,29 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tQn-0u-rfr">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                 </webView>
                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="dgE-rE-NPG">
-                    <rect key="frame" x="178" y="324" width="20" height="20"/>
+                    <rect key="frame" x="178" y="299" width="20" height="20"/>
                 </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="tQn-0u-rfr" firstAttribute="centerY" secondItem="dgE-rE-NPG" secondAttribute="centerY" id="93u-QF-1XF"/>
-                <constraint firstAttribute="bottom" secondItem="tQn-0u-rfr" secondAttribute="bottom" id="Bvt-2a-OEp"/>
-                <constraint firstItem="tQn-0u-rfr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fo9-Bk-suj"/>
-                <constraint firstAttribute="trailing" secondItem="tQn-0u-rfr" secondAttribute="trailing" id="NUH-nC-WQ7"/>
-                <constraint firstItem="tQn-0u-rfr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="r8u-BU-EiM"/>
-                <constraint firstItem="tQn-0u-rfr" firstAttribute="centerX" secondItem="dgE-rE-NPG" secondAttribute="centerX" id="uYc-nr-FIq"/>
+                <constraint firstItem="tQn-0u-rfr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2Kt-0t-fWX"/>
+                <constraint firstAttribute="trailing" secondItem="tQn-0u-rfr" secondAttribute="trailing" id="Cws-gJ-sMp"/>
+                <constraint firstItem="tQn-0u-rfr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DjD-IU-G4R"/>
+                <constraint firstItem="tQn-0u-rfr" firstAttribute="centerX" secondItem="dgE-rE-NPG" secondAttribute="centerX" id="E7q-fC-Up7"/>
+                <constraint firstItem="dgE-rE-NPG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="hb0-DZ-Lfx"/>
+                <constraint firstAttribute="bottom" secondItem="tQn-0u-rfr" secondAttribute="bottom" constant="-50" id="uhP-H8-rxx"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>

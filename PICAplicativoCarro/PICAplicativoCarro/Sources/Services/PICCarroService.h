@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PICCarro.h"
 
 @interface PICCarroService : NSObject
+
+- (NSArray<PICCarro>*) recuperarCarros;
 
 @end

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D91691D1D1EB0F70068F48B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D91691C1D1EB0F70068F48B /* Main.storyboard */; };
+		2D9169201D1EBD7B0068F48B /* PrimeiraTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D91691F1D1EBD7B0068F48B /* PrimeiraTableViewController.m */; };
 		2DE318B81D12FAB200A77CBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE318B71D12FAB200A77CBB /* main.m */; };
 		2DE318BB1D12FAB200A77CBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE318BA1D12FAB200A77CBB /* AppDelegate.m */; };
 		2DE318C31D12FAB200A77CBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DE318C21D12FAB200A77CBB /* Assets.xcassets */; };
@@ -21,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D91691C1D1EB0F70068F48B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2D91691E1D1EBD7B0068F48B /* PrimeiraTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimeiraTableViewController.h; sourceTree = "<group>"; };
+		2D91691F1D1EBD7B0068F48B /* PrimeiraTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimeiraTableViewController.m; sourceTree = "<group>"; };
 		2DE318B31D12FAB200A77CBB /* HelloWorldTwo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorldTwo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE318B71D12FAB200A77CBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2DE318B91D12FAB200A77CBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +87,7 @@
 				2DE318C21D12FAB200A77CBB /* Assets.xcassets */,
 				2DE318C71D12FAB200A77CBB /* Info.plist */,
 				2DE318B61D12FAB200A77CBB /* Supporting Files */,
+				2D91691C1D1EB0F70068F48B /* Main.storyboard */,
 			);
 			path = HelloWorldTwo;
 			sourceTree = "<group>";
@@ -113,6 +119,8 @@
 				2DE318E71D15D91200A77CBB /* SegundaViewController.h */,
 				2DE318E81D15D91200A77CBB /* SegundaViewController.m */,
 				2DE318E91D15D91200A77CBB /* SegundaViewController.xib */,
+				2D91691E1D1EBD7B0068F48B /* PrimeiraTableViewController.h */,
+				2D91691F1D1EBD7B0068F48B /* PrimeiraTableViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -194,6 +202,7 @@
 				2DE318EB1D15D91200A77CBB /* SegundaViewController.xib in Resources */,
 				2DE318C31D12FAB200A77CBB /* Assets.xcassets in Resources */,
 				2DE318E61D15D29700A77CBB /* Default-568h@2x.png in Resources */,
+				2D91691D1D1EB0F70068F48B /* Main.storyboard in Resources */,
 				2DE318DC1D12FB0100A77CBB /* PrimeiroViewController.xib in Resources */,
 				2DE318DD1D12FB0100A77CBB /* PrimeiroViewController_iPad.xib in Resources */,
 			);
@@ -208,6 +217,7 @@
 			files = (
 				2DE318BB1D12FAB200A77CBB /* AppDelegate.m in Sources */,
 				2DE318DB1D12FB0100A77CBB /* PrimeiroViewController.m in Sources */,
+				2D9169201D1EBD7B0068F48B /* PrimeiraTableViewController.m in Sources */,
 				2DE318DA1D12FB0100A77CBB /* NSString+Utils.m in Sources */,
 				2DE318B81D12FAB200A77CBB /* main.m in Sources */,
 				2DE318EA1D15D91200A77CBB /* SegundaViewController.m in Sources */,
@@ -343,6 +353,7 @@
 				2DE318CC1D12FAB200A77CBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

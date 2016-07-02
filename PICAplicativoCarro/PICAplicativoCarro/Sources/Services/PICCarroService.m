@@ -7,7 +7,6 @@
 //
 
 #import "PICCarroService.h"
-#import "PICCarro.h"
 
 @implementation PICCarroService
 
@@ -16,7 +15,7 @@
 
     NSMutableArray<PICCarro> * listaCarros = [@[] mutableCopy];
     
-    for (int i; i < 10; i++) {
+    for (int i = 0; i < 3; i++) {
         
         PICCarro *carro = [PICCarro new];
         [carro setNome:[NSString stringWithFormat:@"Ferrari %d", i]];

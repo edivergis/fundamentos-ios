@@ -25,11 +25,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.meuPrimeiroLabel.text = @"Tela Carregada com Sucesso";
-    
+    self.title = @"Primeira Tela";
     //Indica que a própria classe implmenta o protocolo UITextFieldDelegate
     //Responde aos eventos
     //self.txtNome.delegate = self;
     //self.txtSobrenome.delegate = self;
+    
+    UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithTitle:@"Voltar" style:UIBarButtonItemStylePlain target:nil action:nil];
+    
+    self.navigationItem.backBarButtonItem = barButton;
+    
+    self.navigationController.navigationBar.tintColor = [UIColor greenColor];
+    self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -90,6 +97,12 @@
 }
 
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear: animated];
+    
+    [self.navigationController setNavigationBarHidden:NO];
+}
+
 
 /*
 #pragma mark - Navigation
@@ -105,7 +118,14 @@
     
     SegundaViewController *vc = [[SegundaViewController alloc] init];
     vc.modalTransitionStyle = UIModalTransitionStylePartialCurl;
-    [self presentViewController:vc animated:YES completion:nil];
+    // [self presentViewController:vc animated:YES completion:nil];
+    //[self.navigationController setNavigationBarHidden:YES];
+    [self.navigationController pushViewController:vc animated:YES];
 }
+
+
+
+
+
 
 @end

@@ -22,8 +22,8 @@ static NSString *URL_SOBRE = @"http://www.livroiphone.com.br/carros/sobre.htm";
     self.title = @"Sobre";
     [self.progress startAnimating];
     
-    NSString *path;// = [[NSBundle mainBundle] pathForResource:@"piciOS" ofType:@"html"];
-    path = URL_SOBRE;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"piciOS" ofType:@"html"];
+    //path = URL_SOBRE;
     
     NSURL *url = [NSURL URLWithString:path];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];

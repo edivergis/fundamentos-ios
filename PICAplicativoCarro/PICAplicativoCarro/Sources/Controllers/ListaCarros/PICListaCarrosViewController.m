@@ -10,6 +10,7 @@
 #import "UIViewController+Utils.h"
 #import "PICCarro.h"
 #import "PICCarroService.h"
+#import "<#header#>"
 
 @interface PICListaCarrosViewController (){
     NSArray<PICCarro> *listaCarros;
@@ -29,6 +30,9 @@ static NSString* cellIdentifier = @"Cell";
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
+    
+    PICCarroService *service = [[PICCarroService alloc] init];
+    listaCarros = [service recuperarCarros];
 }
 
 
@@ -38,11 +42,9 @@ static NSString* cellIdentifier = @"Cell";
 }
 
 #pragma mark - UITableViewDelegate
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    
-    
-    
+
     [self alertComTitulo:@"Seleção" mensagem:[NSString stringWithFormat:@"Selecionou o carro  na linha %ld ", indexPath.row]];
 }
 
@@ -52,14 +54,18 @@ static NSString* cellIdentifier = @"Cell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 10;
+    return listaCarros.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    [cell.textLabel setText:[NSString stringWithFormat:@"Carro linha %ld", indexPath.row]];
-    [cell.imageView  setImage:[UIImage imageNamed:@"ferrari_ff.png"]];
+//    [cell.textLabel setText:[NSString stringWithFormat:@"Carro linha %ld", indexPath.row]];
+//    [cell.imageView  setImage:[UIImage imageNamed:@"ferrari_ff.png"]];
+    
+    PICCarro *carro = listaCarros[indexPath.row];
+    cell.textLabel.text = [carro desc];
+    cell.imageView.image = [UIImage imageNamed:carro.urlFoto];
     
     return cell;
 }
