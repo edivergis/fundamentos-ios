@@ -1,0 +1,693 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D10F6FE1D1D705900D817A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F6FD1D1D705900D817A8 /* Default-568h@2x.png */; };
+		2D9168D61D1DCBC50068F48B /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9168BF1D1DCBC50068F48B /* UIViewController+Utils.m */; };
+		2D9168D71D1DCBC50068F48B /* PICCarroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D9168C31D1DCBC50068F48B /* PICCarroCell.xib */; };
+		2D9168D81D1DCBC50068F48B /* PICCarroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9168C51D1DCBC50068F48B /* PICCarroCell.m */; };
+		2D9168D91D1DCBC50068F48B /* PICDetalhesCarroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9168C71D1DCBC50068F48B /* PICDetalhesCarroViewController.m */; };
+		2D9168DA1D1DCBC50068F48B /* PICDetalhesCarroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D9168C81D1DCBC50068F48B /* PICDetalhesCarroViewController.xib */; };
+		2D9168DB1D1DCBC50068F48B /* PICListaCarrosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9168CA1D1DCBC50068F48B /* PICListaCarrosViewController.m */; };
+		2D9168DC1D1DCBC50068F48B /* PICListaCarrosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D9168CB1D1DCBC50068F48B /* PICListaCarrosViewController.xib */; };
+		2D9168DD1D1DCBC50068F48B /* PICSobreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9168CE1D1DCBC50068F48B /* PICSobreViewController.m */; };
+		2D9168DE1D1DCBC50068F48B /* PICSobreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D9168CF1D1DCBC50068F48B /* PICSobreViewController.xib */; };
+		2D9168DF1D1DCBC50068F48B /* PICCarro.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9168D21D1DCBC50068F48B /* PICCarro.m */; };
+		2D9168E01D1DCBC50068F48B /* PICCarroService.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9168D51D1DCBC50068F48B /* PICCarroService.m */; };
+		2D9168FB1D1DCC260068F48B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9168F91D1DCC260068F48B /* AppDelegate.m */; };
+		2D9168FC1D1DCC260068F48B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9168FA1D1DCC260068F48B /* main.m */; };
+		2D91690F1D1DCC3D0068F48B /* pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9168FE1D1DCC3D0068F48B /* pic.png */; };
+		2D9169101D1DCC3D0068F48B /* piciOS.html in Resources */ = {isa = PBXBuildFile; fileRef = 2D9168FF1D1DCC3D0068F48B /* piciOS.html */; };
+		2D9169111D1DCC3D0068F48B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D9169011D1DCC3D0068F48B /* Assets.xcassets */; };
+		2D9169121D1DCC3D0068F48B /* carros_classicos.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D9169031D1DCC3D0068F48B /* carros_classicos.json */; };
+		2D9169131D1DCC3D0068F48B /* carros_esportivos.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D9169041D1DCC3D0068F48B /* carros_esportivos.json */; };
+		2D9169141D1DCC3D0068F48B /* carros_luxo.json in Resources */ = {isa = PBXBuildFile; fileRef = 2D9169051D1DCC3D0068F48B /* carros_luxo.json */; };
+		2D9169151D1DCC3D0068F48B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D9169071D1DCC3D0068F48B /* LaunchScreen.storyboard */; };
+		2D9169161D1DCC3D0068F48B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D9169091D1DCC3D0068F48B /* Main.storyboard */; };
+		2D9169171D1DCC3D0068F48B /* carros_classicos.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2D91690C1D1DCC3D0068F48B /* carros_classicos.xml */; };
+		2D9169181D1DCC3D0068F48B /* carros_esportivos.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2D91690D1D1DCC3D0068F48B /* carros_esportivos.xml */; };
+		2D9169191D1DCC3D0068F48B /* carros_luxo.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2D91690E1D1DCC3D0068F48B /* carros_luxo.xml */; };
+		2D9169271D2174D90068F48B /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9169261D2174D90068F48B /* NSString+Utils.m */; };
+		2D91692A1D218C7E0068F48B /* PICDownloadImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9169291D218C7E0068F48B /* PICDownloadImageView.m */; };
+		2DE0AE8E1D21BD5F00DAD437 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2DE0AE741D21BD5F00DAD437 /* Info.plist */; };
+		2DE0AE8F1D21BD5F00DAD437 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0AE771D21BD5F00DAD437 /* JSONModel.m */; };
+		2DE0AE901D21BD5F00DAD437 /* JSONModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0AE791D21BD5F00DAD437 /* JSONModelArray.m */; };
+		2DE0AE911D21BD5F00DAD437 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0AE7B1D21BD5F00DAD437 /* JSONModelClassProperty.m */; };
+		2DE0AE921D21BD5F00DAD437 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0AE7D1D21BD5F00DAD437 /* JSONModelError.m */; };
+		2DE0AE931D21BD5F00DAD437 /* NSArray+JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0AE801D21BD5F00DAD437 /* NSArray+JSONModel.m */; };
+		2DE0AE941D21BD5F00DAD437 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0AE841D21BD5F00DAD437 /* JSONAPI.m */; };
+		2DE0AE951D21BD5F00DAD437 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0AE861D21BD5F00DAD437 /* JSONHTTPClient.m */; };
+		2DE0AE961D21BD5F00DAD437 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0AE881D21BD5F00DAD437 /* JSONModel+networking.m */; };
+		2DE0AE971D21BD5F00DAD437 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0AE8B1D21BD5F00DAD437 /* JSONKeyMapper.m */; };
+		2DE0AE981D21BD5F00DAD437 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE0AE8D1D21BD5F00DAD437 /* JSONValueTransformer.m */; };
+		2DE8E2041D21B64200F0E7E8 /* PICXmlCarroParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE8E2011D21B64200F0E7E8 /* PICXmlCarroParser.m */; };
+		2DE8E2051D21B64200F0E7E8 /* SMXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE8E2031D21B64200F0E7E8 /* SMXMLDocument.m */; };
+		2DE8E2081D21B66F00F0E7E8 /* PICJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE8E2071D21B66F00F0E7E8 /* PICJsonParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D10F69D1D1D53FD00D817A8 /* PICAplicativoCarro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PICAplicativoCarro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D10F6FD1D1D705900D817A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2D9168BE1D1DCBC50068F48B /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
+		2D9168BF1D1DCBC50068F48B /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
+		2D9168C31D1DCBC50068F48B /* PICCarroCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PICCarroCell.xib; sourceTree = "<group>"; };
+		2D9168C41D1DCBC50068F48B /* PICCarroCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICCarroCell.h; sourceTree = "<group>"; };
+		2D9168C51D1DCBC50068F48B /* PICCarroCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICCarroCell.m; sourceTree = "<group>"; };
+		2D9168C61D1DCBC50068F48B /* PICDetalhesCarroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICDetalhesCarroViewController.h; sourceTree = "<group>"; };
+		2D9168C71D1DCBC50068F48B /* PICDetalhesCarroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICDetalhesCarroViewController.m; sourceTree = "<group>"; };
+		2D9168C81D1DCBC50068F48B /* PICDetalhesCarroViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PICDetalhesCarroViewController.xib; sourceTree = "<group>"; };
+		2D9168C91D1DCBC50068F48B /* PICListaCarrosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICListaCarrosViewController.h; sourceTree = "<group>"; };
+		2D9168CA1D1DCBC50068F48B /* PICListaCarrosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICListaCarrosViewController.m; sourceTree = "<group>"; };
+		2D9168CB1D1DCBC50068F48B /* PICListaCarrosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PICListaCarrosViewController.xib; sourceTree = "<group>"; };
+		2D9168CD1D1DCBC50068F48B /* PICSobreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICSobreViewController.h; sourceTree = "<group>"; };
+		2D9168CE1D1DCBC50068F48B /* PICSobreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICSobreViewController.m; sourceTree = "<group>"; };
+		2D9168CF1D1DCBC50068F48B /* PICSobreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PICSobreViewController.xib; sourceTree = "<group>"; };
+		2D9168D11D1DCBC50068F48B /* PICCarro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICCarro.h; sourceTree = "<group>"; };
+		2D9168D21D1DCBC50068F48B /* PICCarro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICCarro.m; sourceTree = "<group>"; };
+		2D9168D41D1DCBC50068F48B /* PICCarroService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICCarroService.h; sourceTree = "<group>"; };
+		2D9168D51D1DCBC50068F48B /* PICCarroService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICCarroService.m; sourceTree = "<group>"; };
+		2D9168F81D1DCC260068F48B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PICAplicativoCarro/Misc/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		2D9168F91D1DCC260068F48B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PICAplicativoCarro/Misc/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		2D9168FA1D1DCC260068F48B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PICAplicativoCarro/Misc/main.m; sourceTree = SOURCE_ROOT; };
+		2D9168FE1D1DCC3D0068F48B /* pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.png; sourceTree = "<group>"; };
+		2D9168FF1D1DCC3D0068F48B /* piciOS.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = piciOS.html; sourceTree = "<group>"; };
+		2D9169011D1DCC3D0068F48B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D9169031D1DCC3D0068F48B /* carros_classicos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_classicos.json; sourceTree = "<group>"; };
+		2D9169041D1DCC3D0068F48B /* carros_esportivos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_esportivos.json; sourceTree = "<group>"; };
+		2D9169051D1DCC3D0068F48B /* carros_luxo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = carros_luxo.json; sourceTree = "<group>"; };
+		2D9169081D1DCC3D0068F48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D91690A1D1DCC3D0068F48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D91690C1D1DCC3D0068F48B /* carros_classicos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_classicos.xml; sourceTree = "<group>"; };
+		2D91690D1D1DCC3D0068F48B /* carros_esportivos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_esportivos.xml; sourceTree = "<group>"; };
+		2D91690E1D1DCC3D0068F48B /* carros_luxo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = carros_luxo.xml; sourceTree = "<group>"; };
+		2D91691A1D1DCCA80068F48B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PICAplicativoCarro/Config/Info.plist; sourceTree = SOURCE_ROOT; };
+		2D9169251D2174D90068F48B /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		2D9169261D2174D90068F48B /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		2D9169281D218C7E0068F48B /* PICDownloadImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICDownloadImageView.h; sourceTree = "<group>"; };
+		2D9169291D218C7E0068F48B /* PICDownloadImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICDownloadImageView.m; sourceTree = "<group>"; };
+		2DE0AE741D21BD5F00DAD437 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE0AE761D21BD5F00DAD437 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		2DE0AE771D21BD5F00DAD437 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		2DE0AE781D21BD5F00DAD437 /* JSONModelArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelArray.h; sourceTree = "<group>"; };
+		2DE0AE791D21BD5F00DAD437 /* JSONModelArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelArray.m; sourceTree = "<group>"; };
+		2DE0AE7A1D21BD5F00DAD437 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		2DE0AE7B1D21BD5F00DAD437 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		2DE0AE7C1D21BD5F00DAD437 /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		2DE0AE7D1D21BD5F00DAD437 /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		2DE0AE7F1D21BD5F00DAD437 /* NSArray+JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JSONModel.h"; sourceTree = "<group>"; };
+		2DE0AE801D21BD5F00DAD437 /* NSArray+JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JSONModel.m"; sourceTree = "<group>"; };
+		2DE0AE811D21BD5F00DAD437 /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		2DE0AE831D21BD5F00DAD437 /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		2DE0AE841D21BD5F00DAD437 /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		2DE0AE851D21BD5F00DAD437 /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		2DE0AE861D21BD5F00DAD437 /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		2DE0AE871D21BD5F00DAD437 /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		2DE0AE881D21BD5F00DAD437 /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		2DE0AE8A1D21BD5F00DAD437 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		2DE0AE8B1D21BD5F00DAD437 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		2DE0AE8C1D21BD5F00DAD437 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		2DE0AE8D1D21BD5F00DAD437 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		2DE8E2001D21B64200F0E7E8 /* PICXmlCarroParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICXmlCarroParser.h; sourceTree = "<group>"; };
+		2DE8E2011D21B64200F0E7E8 /* PICXmlCarroParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICXmlCarroParser.m; sourceTree = "<group>"; };
+		2DE8E2021D21B64200F0E7E8 /* SMXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMXMLDocument.h; sourceTree = "<group>"; };
+		2DE8E2031D21B64200F0E7E8 /* SMXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMXMLDocument.m; sourceTree = "<group>"; };
+		2DE8E2061D21B66F00F0E7E8 /* PICJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PICJsonParser.h; path = PICAplicativoCarro/Sources/Helper/JSON/PICJsonParser.h; sourceTree = SOURCE_ROOT; };
+		2DE8E2071D21B66F00F0E7E8 /* PICJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PICJsonParser.m; path = PICAplicativoCarro/Sources/Helper/JSON/PICJsonParser.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D10F69A1D1D53FD00D817A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D10F6941D1D53FD00D817A8 = {
+			isa = PBXGroup;
+			children = (
+				2D10F6FD1D1D705900D817A8 /* Default-568h@2x.png */,
+				2D10F69F1D1D53FD00D817A8 /* PICAplicativoCarro */,
+				2D10F69E1D1D53FD00D817A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D10F69E1D1D53FD00D817A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F69D1D1D53FD00D817A8 /* PICAplicativoCarro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D10F69F1D1D53FD00D817A8 /* PICAplicativoCarro */ = {
+			isa = PBXGroup;
+			children = (
+				2D10F6E41D1D56C500D817A8 /* Sources */,
+				2D10F6D41D1D562F00D817A8 /* Config */,
+				2D10F6D61D1D562F00D817A8 /* Misc */,
+				2D10F6B71D1D557300D817A8 /* Resources */,
+			);
+			name = PICAplicativoCarro;
+			path = PICCarApp;
+			sourceTree = "<group>";
+		};
+		2D10F6B71D1D557300D817A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2D9168FD1D1DCC3D0068F48B /* html */,
+				2D9169001D1DCC3D0068F48B /* Imagens */,
+				2D9169021D1DCC3D0068F48B /* json */,
+				2D9169061D1DCC3D0068F48B /* UserInterface */,
+				2D91690B1D1DCC3D0068F48B /* xml */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2D10F6D41D1D562F00D817A8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2D91691A1D1DCCA80068F48B /* Info.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2D10F6D61D1D562F00D817A8 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				2D9168F81D1DCC260068F48B /* AppDelegate.h */,
+				2D9168F91D1DCC260068F48B /* AppDelegate.m */,
+				2D9168FA1D1DCC260068F48B /* main.m */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		2D10F6E41D1D56C500D817A8 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2D9169211D216FED0068F48B /* Helper */,
+				2D9168BD1D1DCBC50068F48B /* Categories */,
+				2D9168C01D1DCBC50068F48B /* Controllers */,
+				2D9168D01D1DCBC50068F48B /* Models */,
+				2D9168D31D1DCBC50068F48B /* Services */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		2D9168BD1D1DCBC50068F48B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2D9168BE1D1DCBC50068F48B /* UIViewController+Utils.h */,
+				2D9168BF1D1DCBC50068F48B /* UIViewController+Utils.m */,
+				2D9169251D2174D90068F48B /* NSString+Utils.h */,
+				2D9169261D2174D90068F48B /* NSString+Utils.m */,
+			);
+			name = Categories;
+			path = PICAplicativoCarro/Sources/Categories;
+			sourceTree = SOURCE_ROOT;
+		};
+		2D9168C01D1DCBC50068F48B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D9168C11D1DCBC50068F48B /* ListaCarros */,
+				2D9168CC1D1DCBC50068F48B /* Sobre */,
+			);
+			name = Controllers;
+			path = PICAplicativoCarro/Sources/Controllers;
+			sourceTree = SOURCE_ROOT;
+		};
+		2D9168C11D1DCBC50068F48B /* ListaCarros */ = {
+			isa = PBXGroup;
+			children = (
+				2D9168C21D1DCBC50068F48B /* Cells */,
+				2D9168C61D1DCBC50068F48B /* PICDetalhesCarroViewController.h */,
+				2D9168C71D1DCBC50068F48B /* PICDetalhesCarroViewController.m */,
+				2D9168C81D1DCBC50068F48B /* PICDetalhesCarroViewController.xib */,
+				2D9168C91D1DCBC50068F48B /* PICListaCarrosViewController.h */,
+				2D9168CA1D1DCBC50068F48B /* PICListaCarrosViewController.m */,
+				2D9168CB1D1DCBC50068F48B /* PICListaCarrosViewController.xib */,
+			);
+			path = ListaCarros;
+			sourceTree = "<group>";
+		};
+		2D9168C21D1DCBC50068F48B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2D9168C31D1DCBC50068F48B /* PICCarroCell.xib */,
+				2D9168C41D1DCBC50068F48B /* PICCarroCell.h */,
+				2D9168C51D1DCBC50068F48B /* PICCarroCell.m */,
+				2D9169281D218C7E0068F48B /* PICDownloadImageView.h */,
+				2D9169291D218C7E0068F48B /* PICDownloadImageView.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2D9168CC1D1DCBC50068F48B /* Sobre */ = {
+			isa = PBXGroup;
+			children = (
+				2D9168CD1D1DCBC50068F48B /* PICSobreViewController.h */,
+				2D9168CE1D1DCBC50068F48B /* PICSobreViewController.m */,
+				2D9168CF1D1DCBC50068F48B /* PICSobreViewController.xib */,
+			);
+			path = Sobre;
+			sourceTree = "<group>";
+		};
+		2D9168D01D1DCBC50068F48B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D9168D11D1DCBC50068F48B /* PICCarro.h */,
+				2D9168D21D1DCBC50068F48B /* PICCarro.m */,
+			);
+			name = Models;
+			path = PICAplicativoCarro/Sources/Models;
+			sourceTree = SOURCE_ROOT;
+		};
+		2D9168D31D1DCBC50068F48B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2D9168D41D1DCBC50068F48B /* PICCarroService.h */,
+				2D9168D51D1DCBC50068F48B /* PICCarroService.m */,
+			);
+			name = Services;
+			path = PICAplicativoCarro/Sources/Services;
+			sourceTree = SOURCE_ROOT;
+		};
+		2D9168FD1D1DCC3D0068F48B /* html */ = {
+			isa = PBXGroup;
+			children = (
+				2D9168FE1D1DCC3D0068F48B /* pic.png */,
+				2D9168FF1D1DCC3D0068F48B /* piciOS.html */,
+			);
+			name = html;
+			path = PICAplicativoCarro/Resources/html;
+			sourceTree = SOURCE_ROOT;
+		};
+		2D9169001D1DCC3D0068F48B /* Imagens */ = {
+			isa = PBXGroup;
+			children = (
+				2D9169011D1DCC3D0068F48B /* Assets.xcassets */,
+			);
+			name = Imagens;
+			path = PICAplicativoCarro/Resources/Imagens;
+			sourceTree = SOURCE_ROOT;
+		};
+		2D9169021D1DCC3D0068F48B /* json */ = {
+			isa = PBXGroup;
+			children = (
+				2D9169031D1DCC3D0068F48B /* carros_classicos.json */,
+				2D9169041D1DCC3D0068F48B /* carros_esportivos.json */,
+				2D9169051D1DCC3D0068F48B /* carros_luxo.json */,
+			);
+			name = json;
+			path = PICAplicativoCarro/Resources/json;
+			sourceTree = SOURCE_ROOT;
+		};
+		2D9169061D1DCC3D0068F48B /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				2D9169071D1DCC3D0068F48B /* LaunchScreen.storyboard */,
+				2D9169091D1DCC3D0068F48B /* Main.storyboard */,
+			);
+			name = UserInterface;
+			path = PICAplicativoCarro/Resources/UserInterface;
+			sourceTree = SOURCE_ROOT;
+		};
+		2D91690B1D1DCC3D0068F48B /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				2D91690C1D1DCC3D0068F48B /* carros_classicos.xml */,
+				2D91690D1D1DCC3D0068F48B /* carros_esportivos.xml */,
+				2D91690E1D1DCC3D0068F48B /* carros_luxo.xml */,
+			);
+			name = xml;
+			path = PICAplicativoCarro/Resources/xml;
+			sourceTree = SOURCE_ROOT;
+		};
+		2D9169211D216FED0068F48B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2DE8E1FE1D21B64200F0E7E8 /* JSON */,
+				2DE8E1FF1D21B64200F0E7E8 /* XML */,
+			);
+			name = Helper;
+			path = PICAplicativoCarro/Sources/Helper;
+			sourceTree = SOURCE_ROOT;
+		};
+		2DE0AE731D21BD5F00DAD437 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				2DE0AE741D21BD5F00DAD437 /* Info.plist */,
+				2DE0AE751D21BD5F00DAD437 /* JSONModel */,
+				2DE0AE7E1D21BD5F00DAD437 /* JSONModelCategories */,
+				2DE0AE811D21BD5F00DAD437 /* JSONModelLib.h */,
+				2DE0AE821D21BD5F00DAD437 /* JSONModelNetworking */,
+				2DE0AE891D21BD5F00DAD437 /* JSONModelTransformations */,
+			);
+			name = JSONModel;
+			path = PICAplicativoCarro/Sources/Helper/JSON/JSONModel;
+			sourceTree = SOURCE_ROOT;
+		};
+		2DE0AE751D21BD5F00DAD437 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				2DE0AE761D21BD5F00DAD437 /* JSONModel.h */,
+				2DE0AE771D21BD5F00DAD437 /* JSONModel.m */,
+				2DE0AE781D21BD5F00DAD437 /* JSONModelArray.h */,
+				2DE0AE791D21BD5F00DAD437 /* JSONModelArray.m */,
+				2DE0AE7A1D21BD5F00DAD437 /* JSONModelClassProperty.h */,
+				2DE0AE7B1D21BD5F00DAD437 /* JSONModelClassProperty.m */,
+				2DE0AE7C1D21BD5F00DAD437 /* JSONModelError.h */,
+				2DE0AE7D1D21BD5F00DAD437 /* JSONModelError.m */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		2DE0AE7E1D21BD5F00DAD437 /* JSONModelCategories */ = {
+			isa = PBXGroup;
+			children = (
+				2DE0AE7F1D21BD5F00DAD437 /* NSArray+JSONModel.h */,
+				2DE0AE801D21BD5F00DAD437 /* NSArray+JSONModel.m */,
+			);
+			path = JSONModelCategories;
+			sourceTree = "<group>";
+		};
+		2DE0AE821D21BD5F00DAD437 /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				2DE0AE831D21BD5F00DAD437 /* JSONAPI.h */,
+				2DE0AE841D21BD5F00DAD437 /* JSONAPI.m */,
+				2DE0AE851D21BD5F00DAD437 /* JSONHTTPClient.h */,
+				2DE0AE861D21BD5F00DAD437 /* JSONHTTPClient.m */,
+				2DE0AE871D21BD5F00DAD437 /* JSONModel+networking.h */,
+				2DE0AE881D21BD5F00DAD437 /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+		2DE0AE891D21BD5F00DAD437 /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				2DE0AE8A1D21BD5F00DAD437 /* JSONKeyMapper.h */,
+				2DE0AE8B1D21BD5F00DAD437 /* JSONKeyMapper.m */,
+				2DE0AE8C1D21BD5F00DAD437 /* JSONValueTransformer.h */,
+				2DE0AE8D1D21BD5F00DAD437 /* JSONValueTransformer.m */,
+			);
+			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
+		2DE8E1FE1D21B64200F0E7E8 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2DE0AE731D21BD5F00DAD437 /* JSONModel */,
+				2DE8E2061D21B66F00F0E7E8 /* PICJsonParser.h */,
+				2DE8E2071D21B66F00F0E7E8 /* PICJsonParser.m */,
+			);
+			name = JSON;
+			path = json;
+			sourceTree = "<group>";
+		};
+		2DE8E1FF1D21B64200F0E7E8 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				2DE8E2001D21B64200F0E7E8 /* PICXmlCarroParser.h */,
+				2DE8E2011D21B64200F0E7E8 /* PICXmlCarroParser.m */,
+				2DE8E2021D21B64200F0E7E8 /* SMXMLDocument.h */,
+				2DE8E2031D21B64200F0E7E8 /* SMXMLDocument.m */,
+			);
+			name = XML;
+			path = xml;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D10F69C1D1D53FD00D817A8 /* PICAplicativoCarro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D10F6B41D1D53FD00D817A8 /* Build configuration list for PBXNativeTarget "PICAplicativoCarro" */;
+			buildPhases = (
+				2D10F6991D1D53FD00D817A8 /* Sources */,
+				2D10F69A1D1D53FD00D817A8 /* Frameworks */,
+				2D10F69B1D1D53FD00D817A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PICAplicativoCarro;
+			productName = PICCarApp;
+			productReference = 2D10F69D1D1D53FD00D817A8 /* PICAplicativoCarro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D10F6951D1D53FD00D817A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PIC;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Edi Vergis";
+				TargetAttributes = {
+					2D10F69C1D1D53FD00D817A8 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 2D10F6981D1D53FD00D817A8 /* Build configuration list for PBXProject "PICAplicativoCarro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D10F6941D1D53FD00D817A8;
+			productRefGroup = 2D10F69E1D1D53FD00D817A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D10F69C1D1D53FD00D817A8 /* PICAplicativoCarro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D10F69B1D1D53FD00D817A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D9169151D1DCC3D0068F48B /* LaunchScreen.storyboard in Resources */,
+				2D9169171D1DCC3D0068F48B /* carros_classicos.xml in Resources */,
+				2D91690F1D1DCC3D0068F48B /* pic.png in Resources */,
+				2D9169141D1DCC3D0068F48B /* carros_luxo.json in Resources */,
+				2D9169121D1DCC3D0068F48B /* carros_classicos.json in Resources */,
+				2D9169161D1DCC3D0068F48B /* Main.storyboard in Resources */,
+				2D9169111D1DCC3D0068F48B /* Assets.xcassets in Resources */,
+				2D9169131D1DCC3D0068F48B /* carros_esportivos.json in Resources */,
+				2D9168DE1D1DCBC50068F48B /* PICSobreViewController.xib in Resources */,
+				2D9168DC1D1DCBC50068F48B /* PICListaCarrosViewController.xib in Resources */,
+				2DE0AE8E1D21BD5F00DAD437 /* Info.plist in Resources */,
+				2D9168DA1D1DCBC50068F48B /* PICDetalhesCarroViewController.xib in Resources */,
+				2D9169101D1DCC3D0068F48B /* piciOS.html in Resources */,
+				2D9169181D1DCC3D0068F48B /* carros_esportivos.xml in Resources */,
+				2D10F6FE1D1D705900D817A8 /* Default-568h@2x.png in Resources */,
+				2D9168D71D1DCBC50068F48B /* PICCarroCell.xib in Resources */,
+				2D9169191D1DCC3D0068F48B /* carros_luxo.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D10F6991D1D53FD00D817A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE0AE951D21BD5F00DAD437 /* JSONHTTPClient.m in Sources */,
+				2D9168E01D1DCBC50068F48B /* PICCarroService.m in Sources */,
+				2D9168D81D1DCBC50068F48B /* PICCarroCell.m in Sources */,
+				2DE0AE931D21BD5F00DAD437 /* NSArray+JSONModel.m in Sources */,
+				2DE0AE971D21BD5F00DAD437 /* JSONKeyMapper.m in Sources */,
+				2D9168DB1D1DCBC50068F48B /* PICListaCarrosViewController.m in Sources */,
+				2D9168D91D1DCBC50068F48B /* PICDetalhesCarroViewController.m in Sources */,
+				2D9169271D2174D90068F48B /* NSString+Utils.m in Sources */,
+				2DE0AE901D21BD5F00DAD437 /* JSONModelArray.m in Sources */,
+				2D9168FB1D1DCC260068F48B /* AppDelegate.m in Sources */,
+				2DE0AE941D21BD5F00DAD437 /* JSONAPI.m in Sources */,
+				2DE0AE981D21BD5F00DAD437 /* JSONValueTransformer.m in Sources */,
+				2D9168FC1D1DCC260068F48B /* main.m in Sources */,
+				2DE8E2081D21B66F00F0E7E8 /* PICJsonParser.m in Sources */,
+				2DE0AE911D21BD5F00DAD437 /* JSONModelClassProperty.m in Sources */,
+				2D9168DD1D1DCBC50068F48B /* PICSobreViewController.m in Sources */,
+				2DE0AE8F1D21BD5F00DAD437 /* JSONModel.m in Sources */,
+				2DE0AE921D21BD5F00DAD437 /* JSONModelError.m in Sources */,
+				2D9168D61D1DCBC50068F48B /* UIViewController+Utils.m in Sources */,
+				2DE0AE961D21BD5F00DAD437 /* JSONModel+networking.m in Sources */,
+				2D9168DF1D1DCBC50068F48B /* PICCarro.m in Sources */,
+				2D91692A1D218C7E0068F48B /* PICDownloadImageView.m in Sources */,
+				2DE8E2051D21B64200F0E7E8 /* SMXMLDocument.m in Sources */,
+				2DE8E2041D21B64200F0E7E8 /* PICXmlCarroParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D9169071D1DCC3D0068F48B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D9169081D1DCC3D0068F48B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2D9169091D1DCC3D0068F48B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D91690A1D1DCC3D0068F48B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D10F6B21D1D53FD00D817A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D10F6B31D1D53FD00D817A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D10F6B51D1D53FD00D817A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PICAplicativoCarro/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cast.picios2016.PICCarApp;
+				PRODUCT_NAME = PICAplicativoCarro;
+			};
+			name = Debug;
+		};
+		2D10F6B61D1D53FD00D817A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PICAplicativoCarro/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cast.picios2016.PICCarApp;
+				PRODUCT_NAME = PICAplicativoCarro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D10F6981D1D53FD00D817A8 /* Build configuration list for PBXProject "PICAplicativoCarro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D10F6B21D1D53FD00D817A8 /* Debug */,
+				2D10F6B31D1D53FD00D817A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D10F6B41D1D53FD00D817A8 /* Build configuration list for PBXNativeTarget "PICAplicativoCarro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D10F6B51D1D53FD00D817A8 /* Debug */,
+				2D10F6B61D1D53FD00D817A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D10F6951D1D53FD00D817A8 /* Project object */;
+}
