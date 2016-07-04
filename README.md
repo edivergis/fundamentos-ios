@@ -44,9 +44,9 @@
    3. Criar um botão para atualizar o projeto
    4. Persistência CoreData (Básico) 
 
-  <b>Avaliação</b>
+6. <a href=''> Avaliação</a>
   
-  Desenvolver um aplicativo que contenhas os seguintes requisitos:
+  Desenvolver um aplicativo que contenha os seguintes requisitos:
   
   1. Classes e objetos em objc que contenham Categories, Enums Protocols
   2. Utilze no mínimo os componentes UINavigationController, UITabBarController, UITableViewController (com a célula da tabela customizada)
