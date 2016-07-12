@@ -12,24 +12,24 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aRf-SF-MeZ" id="pHB-iE-GUa">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Frp-n9-MMO">
-                        <rect key="frame" x="0.0" y="0.0" width="111" height="44"/>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do carro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TU9-ib-ydb">
-                        <rect key="frame" x="139" y="2" width="108" height="19.5"/>
+                        <rect key="frame" x="139" y="2" width="108" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc do carro" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJl-OL-2pq">
-                        <rect key="frame" x="139" y="22.5" width="102" height="19.5"/>
+                        <rect key="frame" x="139" y="23" width="102" height="19"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Frp-n9-MMO" customClass="PICDownloadImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="111" height="44"/>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="TU9-ib-ydb" firstAttribute="leading" secondItem="Frp-n9-MMO" secondAttribute="trailing" constant="28" id="3oh-JB-at0"/>
@@ -47,7 +47,7 @@
                 <outlet property="labelDescCarro" destination="JJl-OL-2pq" id="gZz-xJ-hQS"/>
                 <outlet property="labelNomeCarro" destination="TU9-ib-ydb" id="ggl-hN-ah6"/>
             </connections>
-            <point key="canvasLocation" x="260" y="269"/>
+            <point key="canvasLocation" x="222" y="196"/>
         </tableViewCell>
     </objects>
 </document>

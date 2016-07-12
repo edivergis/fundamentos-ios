@@ -11,6 +11,7 @@
 @interface UIViewController (Utils)
 
 -(void) alertComTitulo:(NSString *) titulo mensagem:(NSString *) msg blocoResposta:(void (^)())bloco;
+
 -(void) alertComTitulo:(NSString *) titulo mensagem:(NSString *) msg;
 
 @end

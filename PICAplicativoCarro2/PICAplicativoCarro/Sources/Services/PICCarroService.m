@@ -10,6 +10,7 @@
 #import "PICXmlCarroParser.h"
 #import "NSString+Utils.h"
 #import "PICJsonParser.h"
+#import "PICCarroDBCoreData.h"
 
 @implementation PICCarroService
 
@@ -41,28 +42,54 @@
 - (NSArray<PICCarro>*) recuperarCarrosPorTipo:(NSString*)tipo{
     NSMutableArray<PICCarro> * listaCarros = [@[] mutableCopy];
     
-    //PICXmlCarroParser *carroParser = [[PICXmlCarroParser alloc] init];
-    //XML SAX
-    //listaCarros = [carroParser parseXMLSAX:[self recuperarCaminhoArquivo:tipo]];
+
+    PICCarroDBCoreData *db = [PICCarroDBCoreData new];
     
-    //XML DOM
-    //listaCarros = [carroParser parseXmlDOM:[self recuperarCaminhoArquivo:tipo]];
-    
-    //JSON  Genérico
-    PICJsonParser *jsonParser = [PICJsonParser new];
-    //listaCarros = [jsonParser parseJson:[self recuperarCaminhoArquivo:tipo xml:NO]];
-   
-    //JSONModel
-     listaCarros = [jsonParser parseJsonModel:[self recuperarCaminhoArquivo:tipo xml:NO]];
-    
+    NSArray *carros = [db getCarroPorTipo:tipo];
+    if (carros.count == 0) {
+        
+        //PICXmlCarroParser *carroParser = [[PICXmlCarroParser alloc] init];
+        //XML SAX
+        //listaCarros = [carroParser parseXMLSAX:[self recuperarCaminhoArquivo:tipo]];
+        
+        //XML DOM
+        //listaCarros = [carroParser parseXmlDOM:[self recuperarCaminhoArquivo:tipo]];
+        
+        //JSON  Genérico
+        PICJsonParser *jsonParser = [PICJsonParser new];
+        //listaCarros = [jsonParser parseJson:[self recuperarCaminhoArquivo:tipo xml:NO]];
+        
+        //JSONModel
+        listaCarros = [jsonParser parseJsonModel:[self recuperarCaminhoArquivo:tipo xml:NO]];
+        
+        for (PICCarro *carro in listaCarros) {
+            
+            PICCarroEntity *cEntity = [PICCarroDBCoreData novaInstancia];
+            [cEntity setNome:carro.nome];
+            [cEntity setUrl_foto:carro.url_foto];
+            [cEntity setUrl_info:carro.url_info];
+            [cEntity setUrl_video:carro.url_video];
+            [cEntity setLatitude:carro.latitude];
+            [cEntity setLongitude:carro.longitude];
+            [cEntity setTipo:tipo];
+            [db save:cEntity];
+        }
+    }else{
+        
+        listaCarros = (NSMutableArray<PICCarro>*)carros;
+    }
     
     return listaCarros;
 }
 
 - (void) recuperarCarrosPorTipo:(NSString*)tipo callback:(void (^) (NSString * error, NSMutableArray<PICCarro> *arrayCarro))callback{
+    
     PICJsonParser *jsonParser = [PICJsonParser new];
+    
     NSURLSession *session = [NSURLSession sharedSession];
+    
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"http://www.livroiphone.com.br/carros/carros_%@.json", tipo]];
+    
     NSURLSessionDataTask *task = [session dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (!error) {
             NSMutableArray<PICCarro>* arrayCarro = [jsonParser parseJsonData:data];
@@ -74,6 +101,7 @@
             callback(error.description,nil);
         }
     }];
+    
     [task resume];
 }
 

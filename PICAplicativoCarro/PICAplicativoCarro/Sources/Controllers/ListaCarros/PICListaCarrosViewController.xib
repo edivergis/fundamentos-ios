@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PICListaCarrosViewController">
             <connections>
+                <outlet property="progress" destination="tAP-KB-qtK" id="Xc9-vO-eT5"/>
                 <outlet property="tableView" destination="JH5-Vq-FmK" id="MvZ-eK-mp7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -16,21 +17,46 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZiK-OY-u6S">
+                    <rect key="frame" x="79" y="74" width="218" height="29"/>
+                    <segments>
+                        <segment title="Clássicos"/>
+                        <segment title="Esportivo"/>
+                        <segment title="Luxo"/>
+                    </segments>
+                    <connections>
+                        <action selector="trocarTipo:" destination="-1" eventType="valueChanged" id="CFt-uz-VMc"/>
+                    </connections>
+                </segmentedControl>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JH5-Vq-FmK">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
+                    <rect key="frame" x="0.0" y="115" width="375" height="553"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="tAP-KB-qtK">
+                    <rect key="frame" x="178" y="299" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="JH5-Vq-FmK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1Kf-ny-chB"/>
+                <constraint firstItem="ZiK-OY-u6S" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="9ZX-BS-LiM"/>
+                <constraint firstItem="tAP-KB-qtK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="AV9-Ua-pEZ"/>
+                <constraint firstItem="ZiK-OY-u6S" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Acz-nI-KCV"/>
                 <constraint firstItem="JH5-Vq-FmK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TAi-Rx-edk"/>
                 <constraint firstAttribute="trailing" secondItem="JH5-Vq-FmK" secondAttribute="trailing" id="VVw-8O-rD3"/>
+                <constraint firstItem="JH5-Vq-FmK" firstAttribute="top" secondItem="ZiK-OY-u6S" secondAttribute="bottom" constant="13" id="gbN-qk-Mkw"/>
                 <constraint firstAttribute="bottom" secondItem="JH5-Vq-FmK" secondAttribute="bottom" constant="-50" id="tjd-Wd-Thj"/>
+                <constraint firstItem="tAP-KB-qtK" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="uGh-qW-Jaw"/>
             </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedTabBarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="1Kf-ny-chB"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="108.5" y="317.5"/>
         </view>
     </objects>
 </document>

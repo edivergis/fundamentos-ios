@@ -58,6 +58,7 @@ static NSString* cellIdentifier = @"Cell";
     [detalhe setCarro:carro];
     
     [self.navigationController pushViewController:detalhe animated:YES];
+    
 }
 
 #pragma mark - UITableViewDataSource

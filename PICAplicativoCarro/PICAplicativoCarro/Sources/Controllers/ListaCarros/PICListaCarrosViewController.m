@@ -10,12 +10,16 @@
 #import "UIViewController+Utils.h"
 #import "PICCarro.h"
 #import "PICCarroService.h"
-#import "<#header#>"
+#import "PICDetalhesCarroViewController.h"
+#import "PICCarroCell.h"
 
 @interface PICListaCarrosViewController (){
     NSArray<PICCarro> *listaCarros;
+    PICCarroService *service;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSString *tipo;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *progress;
 
 @end
 
@@ -29,10 +33,19 @@ static NSString* cellIdentifier = @"Cell";
     //Atribuindo delegates
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIdentifier];
     
-    PICCarroService *service = [[PICCarroService alloc] init];
-    listaCarros = [service recuperarCarros];
+    UINib *nib = [UINib nibWithNibName:@"CarroCell" bundle:nil];
+    
+    [self.tableView registerNib:nib forCellReuseIdentifier:cellIdentifier];
+    
+    service = [[PICCarroService alloc] init];
+    self.tipo = @"classicos";
+    [self buscarCarros];
+    
+    UIBarButtonItem *barButtonAtualizar = [[UIBarButtonItem alloc]initWithTitle:@"Atualizar" style:UIBarButtonItemStylePlain target:self action:@selector(buscarCarros)];
+    
+    [self.navigationItem setRightBarButtonItem:barButtonAtualizar];
+    
 }
 
 
@@ -45,10 +58,22 @@ static NSString* cellIdentifier = @"Cell";
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    [self alertComTitulo:@"Seleção" mensagem:[NSString stringWithFormat:@"Selecionou o carro  na linha %ld ", indexPath.row]];
+    PICCarro *carro = listaCarros[indexPath.row];
+    
+    PICDetalhesCarroViewController * detalheVC = [[PICDetalhesCarroViewController alloc] init];
+    [detalheVC setCarro:carro];
+    
+    [self.navigationController pushViewController:detalheVC animated:YES];
+    
+    
+//    [self alertComTitulo:@"Seleção" mensagem:[NSString stringWithFormat:@"Selecionou o carro  na linha %ld ", indexPath.row]];
 }
 
 #pragma mark - UITableViewDataSource
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 70.0;
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
 }
@@ -59,16 +84,77 @@ static NSString* cellIdentifier = @"Cell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-//    [cell.textLabel setText:[NSString stringWithFormat:@"Carro linha %ld", indexPath.row]];
-//    [cell.imageView  setImage:[UIImage imageNamed:@"ferrari_ff.png"]];
-    
     PICCarro *carro = listaCarros[indexPath.row];
-    cell.textLabel.text = [carro desc];
-    cell.imageView.image = [UIImage imageNamed:carro.urlFoto];
+    
+    PICCarroCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    [cell setNomeCarro:carro.nome];
+    [cell setDescCarro:carro.desc];
+    [cell setUrlImageCarro:carro.url_foto];
+
     
     return cell;
 }
+
+- (IBAction)trocarTipo:(UISegmentedControl*)sender {
+    
+    switch (sender.selectedSegmentIndex) {
+        case 0:
+            self.tipo = @"classicos";
+            break;
+        case 1:
+            self.tipo = @"esportivos";
+            break;
+        case 2:
+            self.tipo = @"luxo";
+            break;
+            
+        default:
+            break;
+    }
+    
+    [self buscarCarros];
+    
+}
+
+//- (void) buscarCarros{
+//    // listaCarros = [service recuperarCarrosPorTipo:self.tipo];
+//    
+//    [service recuperarCarrosPorTipo:self.tipo callback:^(NSString *error, NSMutableArray<PICCarro> *arrayCarro) {
+//        listaCarros = arrayCarro;
+//        [self.tableView reloadData];
+//    }];
+//    
+//}
+
+- (void) buscarCarros{
+    
+    listaCarros = nil;
+    UIView *view = [[UIView alloc] initWithFrame:self.view.frame];
+    
+    [view setBackgroundColor:[UIColor lightGrayColor]];
+    [view setAlpha:0.5];
+    [self.view addSubview:view];
+    
+    [self.progress startAnimating];
+    
+    [service recuperarCarrosPorTipo:self.tipo callback:^(NSString *error, NSMutableArray<PICCarro> *arrayCarro) {
+    
+        if (error) {
+            [self alertComTitulo:@"Atenção" mensagem:error];
+        }else{
+            listaCarros = arrayCarro;
+            [self.tableView reloadData];
+            [self.progress stopAnimating];
+            [view removeFromSuperview];
+        }
+    }];
+    
+}
+
+
+
+
+
 
 /*
 #pragma mark - Navigation

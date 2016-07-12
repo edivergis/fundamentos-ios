@@ -11,6 +11,6 @@
 
 @interface PICDetalhesCarroViewController : UIViewController
 
-@property (nonatomic, assign) PICCarro *carro;
+@property (nonatomic, strong) PICCarro *carro;
 
 @end

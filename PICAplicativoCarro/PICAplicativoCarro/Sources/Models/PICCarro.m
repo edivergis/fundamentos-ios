@@ -11,3 +11,11 @@
 @implementation PICCarro
 
 @end
+
+@implementation PICCarroList
+
+@end
+
+@implementation PICCarros
+
+@end

@@ -7,15 +7,29 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JSONModel.h"
 
-@interface PICCarro : NSObject
+@interface PICCarro : JSONModel
 @property (nonatomic, strong) NSString *nome;
 @property (nonatomic, strong) NSString *desc;
-@property (nonatomic, strong) NSString *urlFoto;
-@property (nonatomic, strong) NSString *urlInfo;
-@property (nonatomic, strong) NSString *urlVideo;
+@property (nonatomic, strong) NSString *url_foto;
+@property (nonatomic, strong) NSString *url_info;
+@property (nonatomic, strong) NSString *url_video;
 @property (nonatomic, strong) NSString *latitude;
 @property (nonatomic, strong) NSString *longitude;
 @end
 
-@protocol PICCarro;
+@protocol PICCarro
+@end
+
+@interface PICCarroList : JSONModel
+
+@property (nonatomic, strong) NSMutableArray<PICCarro> *carro;
+
+@end
+
+@interface PICCarros : JSONModel
+
+@property (nonatomic, strong) PICCarroList *carros;
+
+@end

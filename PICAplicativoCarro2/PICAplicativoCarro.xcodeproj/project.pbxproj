@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2D10F6FE1D1D705900D817A8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D10F6FD1D1D705900D817A8 /* Default-568h@2x.png */; };
+		2D7CA3D31D2E82360025BC3F /* CarrosModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D7CA3D11D2E82360025BC3F /* CarrosModel.xcdatamodeld */; };
+		2D7CA4121D2E8D2D0025BC3F /* PICCarroEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7CA40F1D2E8D2D0025BC3F /* PICCarroEntity+CoreDataProperties.m */; };
+		2D7CA4131D2E8D2D0025BC3F /* PICCarroEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7CA4111D2E8D2D0025BC3F /* PICCarroEntity.m */; };
+		2D7CA4201D2EDAF70025BC3F /* PICCarroDBCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7CA41F1D2EDAF70025BC3F /* PICCarroDBCoreData.m */; };
 		2D9168D61D1DCBC50068F48B /* UIViewController+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9168BF1D1DCBC50068F48B /* UIViewController+Utils.m */; };
 		2D9168D71D1DCBC50068F48B /* PICCarroCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D9168C31D1DCBC50068F48B /* PICCarroCell.xib */; };
 		2D9168D81D1DCBC50068F48B /* PICCarroCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9168C51D1DCBC50068F48B /* PICCarroCell.m */; };
@@ -53,6 +57,13 @@
 /* Begin PBXFileReference section */
 		2D10F69D1D1D53FD00D817A8 /* PICAplicativoCarro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PICAplicativoCarro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D10F6FD1D1D705900D817A8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2D7CA3D21D2E82360025BC3F /* CarrosModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CarrosModel.xcdatamodel; sourceTree = "<group>"; };
+		2D7CA40E1D2E8D2D0025BC3F /* PICCarroEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PICCarroEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		2D7CA40F1D2E8D2D0025BC3F /* PICCarroEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PICCarroEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		2D7CA4101D2E8D2D0025BC3F /* PICCarroEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICCarroEntity.h; sourceTree = "<group>"; };
+		2D7CA4111D2E8D2D0025BC3F /* PICCarroEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICCarroEntity.m; sourceTree = "<group>"; };
+		2D7CA41E1D2EDAF70025BC3F /* PICCarroDBCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICCarroDBCoreData.h; sourceTree = "<group>"; };
+		2D7CA41F1D2EDAF70025BC3F /* PICCarroDBCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PICCarroDBCoreData.m; sourceTree = "<group>"; };
 		2D9168BE1D1DCBC50068F48B /* UIViewController+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Utils.h"; sourceTree = "<group>"; };
 		2D9168BF1D1DCBC50068F48B /* UIViewController+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Utils.m"; sourceTree = "<group>"; };
 		2D9168C31D1DCBC50068F48B /* PICCarroCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PICCarroCell.xib; sourceTree = "<group>"; };
@@ -197,9 +208,41 @@
 				2D9168BD1D1DCBC50068F48B /* Categories */,
 				2D9168C01D1DCBC50068F48B /* Controllers */,
 				2D9168D01D1DCBC50068F48B /* Models */,
+				2D7CA3D01D2E821C0025BC3F /* CoreData */,
 				2D9168D31D1DCBC50068F48B /* Services */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		2D7CA3D01D2E821C0025BC3F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2D7CA3D11D2E82360025BC3F /* CarrosModel.xcdatamodeld */,
+				2D7CA40C1D2E8CFF0025BC3F /* Entity */,
+				2D7CA40D1D2E8CFF0025BC3F /* Manager */,
+			);
+			name = CoreData;
+			path = PICAplicativoCarro/Sources/CoreData;
+			sourceTree = SOURCE_ROOT;
+		};
+		2D7CA40C1D2E8CFF0025BC3F /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2D7CA40E1D2E8D2D0025BC3F /* PICCarroEntity+CoreDataProperties.h */,
+				2D7CA40F1D2E8D2D0025BC3F /* PICCarroEntity+CoreDataProperties.m */,
+				2D7CA4101D2E8D2D0025BC3F /* PICCarroEntity.h */,
+				2D7CA4111D2E8D2D0025BC3F /* PICCarroEntity.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2D7CA40D1D2E8CFF0025BC3F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2D7CA41E1D2EDAF70025BC3F /* PICCarroDBCoreData.h */,
+				2D7CA41F1D2EDAF70025BC3F /* PICCarroDBCoreData.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		2D9168BD1D1DCBC50068F48B /* Categories */ = {
@@ -511,6 +554,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D7CA4131D2E8D2D0025BC3F /* PICCarroEntity.m in Sources */,
 				2DE0AE951D21BD5F00DAD437 /* JSONHTTPClient.m in Sources */,
 				2D9168E01D1DCBC50068F48B /* PICCarroService.m in Sources */,
 				2D9168D81D1DCBC50068F48B /* PICCarroCell.m in Sources */,
@@ -524,11 +568,14 @@
 				2DE0AE941D21BD5F00DAD437 /* JSONAPI.m in Sources */,
 				2DE0AE981D21BD5F00DAD437 /* JSONValueTransformer.m in Sources */,
 				2D9168FC1D1DCC260068F48B /* main.m in Sources */,
+				2D7CA3D31D2E82360025BC3F /* CarrosModel.xcdatamodeld in Sources */,
 				2DE8E2081D21B66F00F0E7E8 /* PICJsonParser.m in Sources */,
 				2DE0AE911D21BD5F00DAD437 /* JSONModelClassProperty.m in Sources */,
 				2D9168DD1D1DCBC50068F48B /* PICSobreViewController.m in Sources */,
 				2DE0AE8F1D21BD5F00DAD437 /* JSONModel.m in Sources */,
+				2D7CA4201D2EDAF70025BC3F /* PICCarroDBCoreData.m in Sources */,
 				2DE0AE921D21BD5F00DAD437 /* JSONModelError.m in Sources */,
+				2D7CA4121D2E8D2D0025BC3F /* PICCarroEntity+CoreDataProperties.m in Sources */,
 				2D9168D61D1DCBC50068F48B /* UIViewController+Utils.m in Sources */,
 				2DE0AE961D21BD5F00DAD437 /* JSONModel+networking.m in Sources */,
 				2D9168DF1D1DCBC50068F48B /* PICCarro.m in Sources */,
@@ -688,6 +735,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2D7CA3D11D2E82360025BC3F /* CarrosModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2D7CA3D21D2E82360025BC3F /* CarrosModel.xcdatamodel */,
+			);
+			currentVersion = 2D7CA3D21D2E82360025BC3F /* CarrosModel.xcdatamodel */;
+			path = CarrosModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 2D10F6951D1D53FD00D817A8 /* Project object */;
 }

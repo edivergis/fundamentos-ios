@@ -7,9 +7,10 @@
 //
 
 #import "PICCarroCell.h"
+#import "PICDownloadImageView.h"
 
 @interface PICCarroCell() 
-@property (weak, nonatomic) IBOutlet UIImageView *imageViewCarro;
+@property (weak, nonatomic) IBOutlet PICDownloadImageView *imageViewCarro;
 @property (weak, nonatomic) IBOutlet UILabel *labelNomeCarro;
 @property (weak, nonatomic) IBOutlet UILabel *labelDescCarro;
 
@@ -25,7 +26,7 @@
 }
 
 - (void)setUrlImageCarro:(NSString *)urlImage{
-    self.imageViewCarro.image = [UIImage imageNamed:urlImage];
+    [self.imageViewCarro setUrl:urlImage];
 }
 
 @end

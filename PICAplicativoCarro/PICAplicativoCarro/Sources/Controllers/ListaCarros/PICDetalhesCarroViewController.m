@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.imageView.image = [UIImage imageNamed:self.carro.urlFoto];
+    self.imageView.image = [UIImage imageNamed:self.carro.url_foto];
     self.textView.text = self.carro.desc;
 }
 

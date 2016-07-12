@@ -77,6 +77,7 @@ static NSString *CONST_LONGITUDE = @"longitude";
         NSError *error =nil;
         PICCarros *cardList = [[PICCarros alloc] initWithData:data error:&error];
         listaCarros = (NSMutableArray<PICCarro>*)[[cardList carros] carro];
+        
         if (error) {
             NSLog(@"Erro ao fazer parser : %@", error.description);
         }

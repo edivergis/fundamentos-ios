@@ -9,4 +9,7 @@ dependencies: \
   /Users/c1284047/Documents/Treinamento\ iOS/fundamentos-ios/PICAplicativoCarro2/PICAplicativoCarro/Sources/Helper/JSON/JSONModel/JSONModelTransformations/JSONKeyMapper.h \
   /Users/c1284047/Documents/Treinamento\ iOS/fundamentos-ios/PICAplicativoCarro2/PICAplicativoCarro/Sources/Helper/xml/PICXmlCarroParser.h \
   /Users/c1284047/Documents/Treinamento\ iOS/fundamentos-ios/PICAplicativoCarro2/PICAplicativoCarro/Sources/Categories/NSString+Utils.h \
-  /Users/c1284047/Documents/Treinamento\ iOS/fundamentos-ios/PICAplicativoCarro2/PICAplicativoCarro/Sources/Helper/JSON/PICJsonParser.h
+  /Users/c1284047/Documents/Treinamento\ iOS/fundamentos-ios/PICAplicativoCarro2/PICAplicativoCarro/Sources/Helper/JSON/PICJsonParser.h \
+  /Users/c1284047/Documents/Treinamento\ iOS/fundamentos-ios/PICAplicativoCarro2/PICAplicativoCarro/Sources/CoreData/Manager/PICCarroDBCoreData.h \
+  /Users/c1284047/Documents/Treinamento\ iOS/fundamentos-ios/PICAplicativoCarro2/PICAplicativoCarro/Sources/CoreData/Entity/PICCarroEntity.h \
+  /Users/c1284047/Documents/Treinamento\ iOS/fundamentos-ios/PICAplicativoCarro2/PICAplicativoCarro/Sources/CoreData/Entity/PICCarroEntity+CoreDataProperties.h

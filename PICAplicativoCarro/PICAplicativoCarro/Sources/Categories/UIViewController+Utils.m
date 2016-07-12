@@ -17,6 +17,7 @@
     [alertController addAction:okAction];
     
     [self performSelectorOnMainThread:@selector(presentViewController:) withObject:alertController waitUntilDone:NO];
+
 }
 
 -(void) alertComTitulo:(NSString *) titulo mensagem:(NSString *) msg{

@@ -12,5 +12,8 @@
 @interface PICCarroService : NSObject
 
 - (NSArray<PICCarro>*) recuperarCarros;
+- (NSArray<PICCarro>*) recuperarCarrosPorTipo:(NSString*)tipo;
+
+- (void) recuperarCarrosPorTipo:(NSString*)tipo callback:(void (^) (NSString * error, NSMutableArray<PICCarro> *arrayCarro))callback;
 
 @end
